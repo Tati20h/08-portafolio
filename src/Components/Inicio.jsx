@@ -1,21 +1,25 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import  animation from '../Componets/assets/img/men_animation.gif';
+import animation from '../Components/assets/img/men_animation.gif';
 
 export const Inicio = () => {
   return (
     <div className='home'>
-
-        <img className='animation' src={animation} alt="animation" />
-      
-
-      <h1>
-        💫¡Bienvenidos a mi rincón digital!🌏 👋
-        <br />
-        Soy <strong>Tatiana Hernández Avendaño ,</strong> una apasionada <strong>Desarrolladora Web</strong> con un enfoque creativo y una fascinación por construir experiencias únicas en la <strong>web.</strong> </h1>
+      <section className='inicio'>
 
 
+        <div>
+          <img className='animation' src={animation} alt="animation" />
+        </div>
 
+        <div>
+          <h1>
+            💫¡Bienvenidos a mi rincón digital!🌏 👋
+            <br />
+            Soy <strong>Tatiana Hernández Avendaño ,</strong> una apasionada <strong>Desarrolladora Web</strong> con un enfoque creativo y una fascinación por construir experiencias únicas en la <strong>web.</strong> </h1>
+        </div>
+
+      </section>
       <section className='lasts-works'>
         <h2 className='heading '>
           Proyectos Destacados:

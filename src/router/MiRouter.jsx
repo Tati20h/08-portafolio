@@ -1,12 +1,12 @@
 import React from 'react'
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom"
-import { Inicio } from "../Componets/Inicio"
-import { Portafolio } from "../Componets/Portafolio"
-import { Curriculum } from "../Componets/Curriculum"
-import { Servicios } from "../Componets/Servicios"
-import { Contacto } from "../Componets/Contacto"
-import { HeaderNav } from '../Componets/layout/HeaderNav'
-import { Footer } from '../Componets/layout/Footer'
+import { Inicio } from "../Components/Inicio"
+import { Portafolio } from "../Components/Portafolio"
+import { Curriculum } from "../Components/Curriculum"
+import { Servicios } from "../Components/Servicios"
+import { Contacto } from "../Components/Contacto"
+import { HeaderNav } from '../Components/layout/HeaderNav'
+import { Footer } from '../Components/layout/Footer'
 
 export const MiRouter = () => {
   return (
@@ -24,7 +24,9 @@ export const MiRouter = () => {
           <Route path='/contacto' element={<Contacto />} />
           <Route path='/curriculum' element={<Curriculum />} />
           <Route path='/servicios' element={<Servicios />} />
-        </Routes>
+          <Route path='*' element={<h1 className='heading'>Eror 404 </h1>} />
+
+          </Routes>
       </section>
 
 
