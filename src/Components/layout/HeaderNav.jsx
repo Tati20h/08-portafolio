@@ -1,15 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from '../assets/img/logo3.png';
 
 export const HeaderNav = () => {
   return (
     <header className='header'>
-      <div className='logo'>
-        <span>T</span>
-        <h3>
-          Tatiana Hernández Avendaño
-        </h3>
-
+      <div >
+        <img className='logo' src={logo} alt='logo' />
       </div>
       <nav>
         <ul>
@@ -20,13 +17,13 @@ export const HeaderNav = () => {
             <NavLink to="/portafolio" className={({ isActive }) => isActive ? "active" : ""}>Portafolio </NavLink>
           </li>
           <li>
-            <NavLink to="/curriculum"className={({ isActive }) => isActive ? "active" : ""}>Curriculum </NavLink>
+            <NavLink to="/curriculum" className={({ isActive }) => isActive ? "active" : ""}>Curriculum </NavLink>
           </li>
           <li>
-            <NavLink to="/servicios"className={({ isActive }) => isActive ? "active" : ""}>Servicios</NavLink>
+            <NavLink to="/servicios" className={({ isActive }) => isActive ? "active" : ""}>Servicios</NavLink>
           </li>
           <li>
-            <NavLink to="/contacto"className={({ isActive }) => isActive ? "active" : ""}>Contacto</NavLink>
+            <NavLink to="/contacto" className={({ isActive }) => isActive ? "active" : ""}>Contacto</NavLink>
           </li>
         </ul>
       </nav>

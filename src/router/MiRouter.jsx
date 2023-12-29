@@ -7,6 +7,7 @@ import { Servicios } from "../Components/Servicios"
 import { Contacto } from "../Components/Contacto"
 import { HeaderNav } from '../Components/layout/HeaderNav'
 import { Footer } from '../Components/layout/Footer'
+import { Proyecto } from '../Components/Proyecto'
 
 export const MiRouter = () => {
   return (
@@ -21,12 +22,16 @@ export const MiRouter = () => {
           <Route path='/' element={<Navigate to="/inicio" />} />
           <Route path='/inicio' element={<Inicio />} />
           <Route path='/portafolio' element={<Portafolio />} />
-          <Route path='/contacto' element={<Contacto />} />
-          <Route path='/curriculum' element={<Curriculum />} />
           <Route path='/servicios' element={<Servicios />} />
-          <Route path='*' element={<h1 className='heading'>Eror 404 </h1>} />
+          <Route path='/curriculum' element={<Curriculum />} />
+          <Route path='/contacto' element={<Contacto />} />
+          <Route path='/proyecto/:id' element={<Proyecto />} />
 
-          </Routes>
+          <Route path='*' element={
+            <div className='page'>
+              <h1 className='heading'>Error 404 </h1>
+            </div>} />
+        </Routes>
       </section>
 
 

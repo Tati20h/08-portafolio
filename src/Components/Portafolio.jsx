@@ -1,5 +1,5 @@
 import React from 'react'
-import { trabajos } from '../data/Trabajos'
+import { trabajos } from '../data/trabajos'
 import { Link } from 'react-router-dom';
 
 export const Portafolio = () => {
