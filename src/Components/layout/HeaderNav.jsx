@@ -1,6 +1,7 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/img/logo3.png';
+import icono from '../assets/img/linkedin.svg'
 
 export const HeaderNav = () => {
   return (
@@ -26,7 +27,17 @@ export const HeaderNav = () => {
             <NavLink to="/contacto" className={({ isActive }) => isActive ? "active" : ""}>Contacto</NavLink>
           </li>
         </ul>
+
+
       </nav>
+
+
+      <li>
+        <a href='/www.linkedin.com/in/tatiana-hernandez29'/>
+        <img className='icono' src={icono} alt='lin' />
+
+      </li>
+
     </header>
   )
 }
