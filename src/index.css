@@ -1,262 +1,427 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "proxima nova bold", "Helvetica Neue",'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ body {
+   margin: 0;
+   font-family: "proxima nova bold", "Helvetica Neue",
+     'Ubuntu', 'Helvetica', 'Arial', 'Sans-serif';
+ }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.layout {
-  width: 90%;
-  margin: 0% auto;
-}
-
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90px;
-  margin-bottom: 15px;
-  background: #111;
-
-}
-
-.logo {
-  margin: 5px;
-}
-
-.header nav ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-  height: 20px;
-}
-
-.header li {
-  
-  font-weight: bold;
-  font-size: 16px;
-  margin-left: 20px;
-  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-
-  margin-right: 15px;
-
-}
-
-.header li a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: all 300ms;
-  
-}
-
-.header .active {
-  color: #fa4529;
-}
-
-.header a:hover {
-  color: #fa4529;
-}
-
-.inicio {
-  display: flex;
-}
-
-.icono{
-  width: 66px;
-}
-.content {
-  background: #fafafa;
-  min-height: 400px;
-  min-height: 400px;
-
-}
-
-.footer {
-  margin-top: 80px;
-  min-height: 40px;
-  line-height: 7px;
-  text-align: center;
-  font-size: 18px;
-  margin-top: 35px;
-  padding-top: 45px;
-  border-top: 3px solid black;
-  background: #f5f5f5;
-  justify-items: center;
-  color: rgba(13, 81, 133, 0.267);
-}
-
-.home h1 {
-  margin: 0;
-  color: #333333;
-  text-rendering: optimizelegibility;
-  font-weight: normal;
-  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-
-}
-
-.home strong {
-  color: #fa4529;
-}
-
-.home h2 {
-  color: rgb(69, 64, 64);
-  font-weight: lighter;
-}
-
-.home a {
-  padding: 3px;
-  border-radius: 8px;
-  color: white;
-  background-color: #fa4529;
-  text-decoration: none;
-  transition: all 300ms;
-}
-
-.home a:hover {
-  color: black;
-  background-color: lightcyan;
-}
+ code {
+   font-family: "proxima nova bold", "Helvetica Neue",
+     'Ubuntu', 'Helvetica', 'Arial', 'Sans-serif';
+ }
 
 
+ /*Estilos Cabesera */
+ .header {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 100px;
+   background: rgb(1, 1, 1);
+   margin-bottom: 15px;
+ }
 
-.home .heading {
-  font-size: 25px;
-  font-weight: 500;
-  color: black;
-  font-style: italic;
-  margin-bottom: 0px;
-}
+ .logo {
+   width: 95px;
+   height: 95px;
+ }
 
-.page .heading {
-  font-size: 60px;
-  font-weight: bold;
-}
+ .header nav ul {
+   width: auto;
+   float: right;
+   font-size: 1.6rem;
+   background: transparent;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   list-style: none;
+   height: 20px;
+ }
 
-.home p {
-  color: rgb(69, 64, 64);
-}
+ .header li {
+   position: static;
+   font-weight: bold;
+   font-size: 18px;
+   margin-left: 20px;
+   font-family: 'Montserrat', sans-serif;
+   margin-right: 20px;
+ }
 
-.animation {
-  width: 450px;
-  height: 450px;
-  border-radius: 8%;
+ .header li a {
+   color: #ffffff;
+   text-decoration: none;
+   transition: all 300ms;
+ }
 
-}
+ .header .active {
+   color: hsl(187, 46%, 52%);
+ }
 
-input[type="text"],
-textarea {
-  display: block;
-  padding: 18px;
-  margin-top: 25px;
-  width: 250px;
+ .header a:hover {
+   color: hsl(187, 46%, 52%);
+ }
+
+ /*Estilos home */
+ .content {
+   align-content: center;
+   width: 90%;
+   height: 100%;
+
+ }
+
+ .home {
+   display: flex;
+
+ }
+
+ .lasts-works {
+   display: flex;
+   border-top: 0.1px solid gray;
+   border-bottom: 0.1px solid gray;
+   background: #fafafa;
+ }
+
+ .lasts-works p {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0%;
+   text-align: justify;
+   font-size: 20px;
+   color: rgb(69, 64, 64);
+ }
+
+ .container {
+   display: flex;
+   flex-direction: column;
+   padding: 3em;
+   margin: 0%;
+ }
+
+ .containere {
+   display: flex;
+   flex-direction: column;
+   padding: 3em;
+   margin: 0%;
+ }
+
+ .containeres {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 2.1em;
+   margin: 0%;
+
+ }
+
+ .graf {
+   display: flex;
+   flex-direction: column;
+   padding: 5em;
+   align-content: center;
+ }
+
+ .grafi {
+   margin: 30px;
+   padding: 1em;
+   align-content: center;
+ }
+
+ .page {
+   margin-left: 75px;
+   text-align: center;
+   width: 100%;
+ }
+
+ .page strong {
+   color: #db2757;
+ }
+
+ .abouts {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 2em;
+ }
+
+ .home a {
+   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+   color: #db2757;
+   ;
+   text-decoration: none;
+   transition: all 500ms;
+ }
+
+ .home a:hover {
+   color: black;
+   /*background-color: hsl(187, 46%, 52%);*/
+ }
+
+ .page .heading {
+   margin-left: 200px;
+   width: 250px;
+   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+   font-size: 68px;
+   font-weight: bold;
+ }
+
+ .subheading {
+   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+   font-size: 38px;
+   font-weight: bold;
+ }
+
+ .subhead {
+   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+   font-size: 50px;
+   font-weight: bold;
+ }
 
 
-}
+ .sub {
+   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+   font-size: 30px;
+ }
 
-input[type="submit"],
-button {
-  margin-top: 15px;
-  font-size: 16px;
-  padding: 15px;
-  border: 0px;
-  border-radius: 8px;
-  color: white;
-  background-color: #fa4529;
-  text-decoration: none;
-  transition: all 300ms;
-}
+ .subh {
+   font-family: 'Montserrat', sans-serif;
+ }
 
-.home a:hover,
-input[type="submit"]:hover,
-button:hover {
-  color: black;
-  background-color: rgb(50, 131, 169);
-}
+ .home p {
+   font-family: 'Montserrat', sans-serif;
+   margin-left: 70px;
+   text-align: justify;
+   font-size: 23px;
+   color: rgb(69, 64, 64);
+   padding: 0.5em;
+ }
 
-.cont {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
+ .animation {
+   width: 450px;
 
-.works {
-  display: flex;
-  flex-wrap: wrap;
+   border-radius: 3%;
+   margin: 40px;
+ }
 
-}
+ .input {
+   display: block;
+   padding: 10px;
+   margin-top: 25px;
+   width: 250px;
+   height: 16px;
+ }
 
-.work-item {
-  flex-basis: 10%;
-  flex-grow: 1;
-  border: 1PX solid #ddd;
-  box-shadow: 0px 5px 15px #ddd;
-  margin: 30px;
-  text-align: center;
-}
+ .motiv {
+   width: 280px;
+   height: 100px;
+   margin-top: 25px;
 
-.work-item .mask {
-  width: 600px;
-  overflow: hidden;
+ }
 
+ input[type="submit"],
+ button {
+   margin-top: 15px;
+   font-size: 16px;
+   padding: 10px;
+   border: 0px;
+   border-radius: 8px;
+   color: white;
+   background-color: #ff5757;
+   text-decoration: none;
+   transition: all 300ms;
 
-  border-radius: 6px;
-  cursor: pointer;
-}
+ }
 
-.work-item img {
-  width: 100%;
-  transition: all 400ms;
-}
+ .home a:hover,
+ input[type="submit"]:hover,
+ button:hover {
+   color: #4DD0E1;
 
-.work-item .mask:hover img {
-  width: 120%;
-}
+ }
 
+ .cont {
+   margin-bottom: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ }
 
-.work-item span {
-  display: block;
-  color: gray;
-  margin-top: 35px;
-}
+ /*Estilos pagina  portafolio*/
+ .works {
+   display: flex;
+   margin-bottom: 20px;
+   align-items: center;
+ }
 
-.work-item h2 {
-  display: block;
-  font-size: 25px;
-  color: rgb(0, 0, 0);
-  margin-top: 5px;
+ .work {
+   position: relative;
+   width: 400px;
+   height: 450px;
+   background: #fafafa;
+   border: 1PX solid #ddd;
+   margin: 20px;
+   text-align: center;
+ }
 
-}
+ .work .face {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
 
-.work-item a {
-  color: black;
-  text-decoration: none;
-  transform: all 300ms;
-  margin: 5px
-}
+ }
 
-.work-item a:hover {
-  color: #fa4529;
-  text-decoration: none;
-}
+ .work .item {
+   transform: perspective(500px) rotateY(0deg);
+   box-shadow: 0px 5px 15px #ddd;
+ }
 
+ .work .item img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: all 400ms;
+ }
 
-.work-item h3 {
-  display: block;
-  margin: 8px;
-  color: #444;
+ .work .item span {
+   display: block;
+   color: gray;
+   margin-top: 35px;
+ }
 
-}
+ .work .item h2 {
+   width: 100%;
+   height: 45px;
+   display: block;
+   font-size: 25px;
+   color: rgb(0, 0, 0);
+   margin-top: 5px;
 
-.page-work .mask {
+ }
 
-  box-shadow: 0px 0px 20px #ddd;
+ .work .back .link {
+   border-top: solid 1px #f3f3f3;
+   height: 50px;
+   line-height: 50px;
+ }
 
-}
+ .work .back .link a {
+   color: black;
+   text-decoration: none;
+   transform: all 300ms;
+   margin: 15px
+ }
+
+ .work .back a:hover {
+   color: #e8f0f4;
+   text-decoration: none;
+ }
+
+ .work .back h1 {
+   font-size: 22px;
+   color: #444;
+   text-align: center;
+ }
+
+ .work .back h3 {
+   font-size: 17px;
+ }
+
+ .work .back p {
+   text-align: justify;
+   font-size: 16px;
+ }
+
+ .work .back {
+   transform: perspective(600px) rotateY(180deg);
+   background: #938c8c;
+   padding: 15px;
+   color: #f3f3f3;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+   box-shadow: 0 5px 10px;
+ }
+
+ .work:hover .item {
+   transform: perspective(600px) rotateY(180deg);
+ }
+
+ .work:hover .back {
+   transform: perspective(600px) rotateY(360deg);
+ }
+
+ .contac {
+   display: flex;
+   flex-direction: column;
+   margin: 0%;
+   /* padding: 0 150px;*/
+ }
+
+ .contac p {
+   /* padding: 0 200px 0;*/
+   margin: 0%;
+   text-align-last: center;
+   font-size: 26px;
+ }
+
+ .social-icons {
+   margin-bottom: 50px;
+   list-style-type: none;
+   margin-top: 35px;
+   display: flex;
+   justify-content: space-evenly;
+
+ }
+
+ .icon-name {
+   font-weight: bold;
+   margin-left: 30px;
+   font-size: 18px;
+   text-decoration: none;
+   color: rgb(3, 155, 229);
+   display: flex;
+   align-items: center;
+
+ }
+
+ .icon-name1 {
+   font-weight: bold;
+   margin-left: 30px;
+   color: #333333;
+ }
+
+ .contact {
+   background: #fafafa;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 440px;
+   height: 420px;
+   box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
+   border: solid 1px lightslategray;
+   border-radius: 8px;
+ }
+
+ /*Estilos footer */
+
+ .footer {
+   height: 80px;
+   display: flex;
+   line-height: 7px;
+   text-align: center;
+   font-size: 18px;
+   border-top: 3px solid black;
+   background: #f5f5f5;
+   justify-items: center;
+   color: #757575;
+   justify-content: space-evenly;
+   align-content: center;
+   align-items: center;
+ }
+
+ .icon {
+   margin-right: 15px;
+   margin-left: 15px;
+   width: 66px;
+ }

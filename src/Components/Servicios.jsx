@@ -1,4 +1,5 @@
 import React from 'react'
+import animation from '../assets/img/universal.gif';
 
 export const Servicios = () => {
   return (
@@ -35,6 +36,10 @@ export const Servicios = () => {
           </p>
 
         </article>
+        <div>
+          <img className='animation' src={animation} alt="animation" />
+        </div>
+
       </section>
     </div>
   )

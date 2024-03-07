@@ -11,21 +11,32 @@ export const Portafolio = () => {
         {
           trabajos.map(trabajo => {
             return (
-              <article key={trabajo.id} className="work-item">
-                <div className='mask'>
+              <div key={trabajo.id} className="work">
+                <div className="face item"  >
+
                   <img className='image' src={trabajo.imagen} alt='img' ></img>
+                  <span>{trabajo.categorias}</span>
+                  <h2> <Link to={"/proyecto/" + trabajo.id}>
+                    {trabajo.nombre} </Link>
+                  </h2>
                 </div>
-                <span>{trabajo.categorias}</span>
-                <h2> <Link to={"/proyecto/" + trabajo.id}>
-                  {trabajo.nombre} </Link>
-                </h2>
-                <h3>{trabajo.tecnologias}</h3>
-                <p>{trabajo.Descripcion}</p>
-              </article>
+                <div className="face back">
+                  <h1 >{trabajo.nombre}  </h1>
+                  <h3>{trabajo.tecnologias}</h3>
+                  <p>{trabajo.Descripcion}</p>
+                  <div className='link'>
+                  <a href={trabajo.url} target="_blank" rel="noreferrer" > Ir al proyecto </a>
+                  </div>
+                </div>
+              </div>
+
+
             );
           })
         }
       </section>
+
+
     </div>
   )
 }

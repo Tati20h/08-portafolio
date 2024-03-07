@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import logo from '../assets/img/logo3.png';
-import icono from '../assets/img/linkedin.svg'
+import { NavLink } from 'react-router-dom'
+import logo from '../../assets/img/logo3.png';
+
 
 export const HeaderNav = () => {
   return (
@@ -28,15 +28,7 @@ export const HeaderNav = () => {
           </li>
         </ul>
 
-
       </nav>
-
-
-      <li>
-        <a href='/www.linkedin.com/in/tatiana-hernandez29'/>
-        <img className='icono' src={icono} alt='lin' />
-
-      </li>
 
     </header>
   )
