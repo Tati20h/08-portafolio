@@ -70,17 +70,17 @@ export const Inicio = () => {
           <h4 className='subheading'>
             <Link to="/portafolio">Proyectos Destacados:</Link>
           </h4>
-          <h2 className='subh'>
+          <h3 className='subh'>
             ¡Aquí tienes un asiento virtual reservado para el futuro digital que estamos construyendo!
-          </h2>
+          </h3>
         </div>
 
         <img className='animation' src={animation} alt="animation" />
 
         <div className='containeres'>
-          <h2 className='subh'>
+          <h3 className='subh'>
             ¡Gracias por visitar y explorar mi portafolio! Siéntete libre de navegar, inspirarte y descubrir lo que podemos lograr juntos.
-          </h2>
+          </h3>
           <h2 className='subheading'><Link to="/contacto">
             Contacta Conmigo.
           </Link>
