@@ -9,8 +9,8 @@
      'Ubuntu', 'Helvetica', 'Arial', 'Sans-serif';
  }
 
-
  /*Estilos Cabesera */
+
  .header {
    display: flex;
    justify-content: space-evenly;
@@ -70,16 +70,15 @@
 
  .home {
    display: flex;
-
  }
 
- .perfil{
-  margin-left: 30px;
+ .perfil {
+   margin-left: 30px;
  }
+
  .lasts-works {
    display: flex;
-   border-top: 0.1px solid gray;
-   border-bottom: 0.1px solid gray;
+   border-top: 0.5px solid #dddddd;
    background: #fafafa;
  }
 
@@ -147,15 +146,10 @@
  .home a {
    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
    color: #db2757;
-   ;
    text-decoration: none;
    transition: all 500ms;
  }
 
- .home a:hover {
-   color: black;
-   /*background-color: hsl(187, 46%, 52%);*/
- }
 
  .page .heading {
    margin-left: 200px;
@@ -185,10 +179,12 @@
 
  .subh {
    font-family: 'Montserrat', sans-serif;
+   font-weight: bold
  }
 
  .home p {
    font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
    margin-left: 70px;
    text-align: justify;
    font-size: 21px;
@@ -197,46 +193,51 @@
  }
 
  .animation {
-   width: 450px;
-
+   width: 480px;
    border-radius: 3%;
    margin: 40px;
  }
 
  .input {
+   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
    display: block;
-   padding: 10px;
+   padding: 12px;
    margin-top: 25px;
    width: 250px;
    height: 16px;
+   font-size: 18px;
  }
 
  .motiv {
+   display: block;
+   padding: 10px;
+   text-align: center;
+   font-size: 16px;
    width: 280px;
    height: 100px;
    margin-top: 25px;
-
  }
 
  input[type="submit"],
  button {
+   box-shadow: 0 4px 6px rgba(242, 220, 95, 0.35);
+
    margin-top: 15px;
-   font-size: 16px;
+   font-size: 20px;
+   font-weight: bolder;
    padding: 10px;
    border: 0px;
-   border-radius: 8px;
-   color: white;
-   background-color: #ff5757;
+   border-radius: 4px;
+   color: #ff5757;
    text-decoration: none;
    transition: all 300ms;
-
+   width: 102px;
  }
 
  .home a:hover,
  input[type="submit"]:hover,
  button:hover {
-   color: #4DD0E1;
-
+   color: hsl(198, 67%, 50%);
  }
 
  .cont {
@@ -248,20 +249,37 @@
 
  /*Estilos pagina  portafolio*/
  .works {
-   display: flex;
-   margin-bottom: 20px;
-   align-items: center;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: space-evenly;
+   gap: 20px;
+   padding: 4em;
+
  }
 
  .work {
    position: relative;
-   width: 400px;
-   height: 450px;
-   background: #fafafa;
+   width: 250px;
+   height: 300px;
+   background: #f5f5f5;
    border: 1PX solid #ddd;
    margin: 20px;
    text-align: center;
  }
+
+ .work a {
+   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+   color: #db2757;
+   text-decoration: none;
+   transition: all 500ms;
+   font-size: 25px;
+ }
+
+ .work a:hover {
+   color: hsl(198, 67%, 50%);
+
+ }
+
 
  .work .face {
    position: absolute;
@@ -271,17 +289,12 @@
 
  }
 
- .work .item {
-   transform: perspective(500px) rotateY(0deg);
-   box-shadow: 0px 5px 15px #ddd;
- }
-
  .work .item img {
    position: absolute;
    width: 100%;
    height: 100%;
    object-fit: cover;
-   transition: all 400ms;
+   transition: all 200ms;
  }
 
  .work .item span {
@@ -297,7 +310,6 @@
    font-size: 25px;
    color: rgb(0, 0, 0);
    margin-top: 5px;
-
  }
 
  .work .back .link {
@@ -334,8 +346,8 @@
  }
 
  .work .back {
-   transform: perspective(600px) rotateY(180deg);
-   background: #938c8c;
+   /*transform: perspective(600px) rotateY(180deg);*/
+
    padding: 15px;
    color: #f3f3f3;
    display: flex;
@@ -346,31 +358,33 @@
  }
 
  .work:hover .item {
-   transform: perspective(600px) rotateY(180deg);
+   /*transform: perspective(600px) rotateY(180deg);*/
  }
 
  .work:hover .back {
-   transform: perspective(600px) rotateY(360deg);
+   /*transform: perspective(600px) rotateY(360deg);*/
  }
 
  .contac {
-   display: flex;
-   flex-direction: column;
+
    margin: 0%;
-   /* padding: 0 150px;*/
+
  }
 
  .contac p {
-   /* padding: 0 200px 0;*/
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   padding: 0 200px 0;
    margin: 0%;
    text-align-last: center;
    font-size: 26px;
  }
 
  .social-icons {
-   margin-bottom: 50px;
+   padding: 20px;
+
    list-style-type: none;
-   margin-top: 35px;
+   margin-top: 60px;
    display: flex;
    justify-content: space-evenly;
 
@@ -394,13 +408,14 @@
  }
 
  .contact {
+   font-family: 'Montserrat', sans-serif;
    background: #fafafa;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    width: 440px;
-   height: 420px;
+   height: 470px;
    box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
    border: solid 1px lightslategray;
    border-radius: 8px;

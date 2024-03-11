@@ -1,5 +1,5 @@
 import React from 'react'
-import animation from '../assets/img/men_animation.gif';
+import animation from '../assets/img/learn.gif';
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 
