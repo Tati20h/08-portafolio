@@ -17,7 +17,7 @@ export const MiRouter = () => {
 
 
       {/*CONTENIDO CENTRAL */}
-      <section className='content'>
+      <section className='conten'>
         <Routes>
           <Route path='/' element={<Navigate to="/inicio" />} />
           <Route path='/inicio' element={<Inicio />} />
