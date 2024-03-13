@@ -30,8 +30,8 @@ export const Portafolio = () => {
                   <h2>
                     {trabajo.nombre}
                   </h2>
-                  <p>{trabajo.Descripcion}</p>
-                  <h5>{trabajo.tecnologias}</h5> 
+                  <h4>{trabajo.Descripcion}</h4>
+                  <p>{trabajo.tecnologias}</p> 
 
                   <a href={trabajo.url} target="_blank" rel="noreferrer" > Ir al proyecto </a>
                   

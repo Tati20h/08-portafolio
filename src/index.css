@@ -329,12 +329,13 @@
  }
 
  .works .card .content p {
-  font-size: 18px;
+  font-size: 13.5px;
   font-family: 'Montserrat', sans-serif;
   font-weight:normal;
   color: rgb(69, 64, 64);
  }
  .works .card .content h4 {
+font-size: 16px;
   color: rgb(69, 64, 64);
  font-weight: border;
  font-family: 'Montserrat', sans-serif;

@@ -2,7 +2,7 @@ export const trabajos = [
   {
     'id': 'frontend-ehour',
     'nombre': 'Labor certificates.',
-    'url': 'https://github.com/Tati20h/fronend-ehour',
+    'url': 'https://certifications-generator-jmbrv.ondigitalocean.app/',
     'tecnologias': 'HTML, CSS, JS, REACT, FIGMA,MUIX',
     'categorias': 'Front-end',
     'imagen': 'https://github.com/Tati20h/06-proyecto1/blob/main/src/img/Movies.png?raw=true',
@@ -12,9 +12,10 @@ export const trabajos = [
   {
     'id': 'data-lovers',
     'nombre': 'Delie Taste.',
-    'url': 'https://github.com/Tati20h/DEV008-data-lovers',
+    'url': 'https://yennyferjp.github.io/DEV008-data-lovers/',
     'tecnologias': 'HTML, CSS, JS,(Git y GitHub), FIGMA, Web APIs',
     'categorias': 'Front-end',
+    'imagen': 'https://github.com/Tati20h/DEV008-data-lovers/blob/main/src/img/imgbanner.png?raw=true',
     'Descripcion': 'E-commerce restaurant website',
   },
   {
@@ -22,7 +23,7 @@ export const trabajos = [
     'nombre': 'Warmi.',
     'url': 'https://github.com/Tati20h/DEV008-social-network',
     'tecnologias': 'HTML, CSS, JS, SPA, Git, GitHub, FIGMA, Design Responsive, Firestore,  Firebase ',
-    'imagen': 'https://private-user-images.githubusercontent.com/46870050/254909523-494c72bb-4abb-4ff4-b9af-4a72fed2894a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDM3NTcyMTYsIm5iZiI6MTcwMzc1NjkxNiwicGF0aCI6Ii80Njg3MDA1MC8yNTQ5MDk1MjMtNDk0YzcyYmItNGFiYi00ZmY0LWI5YWYtNGE3MmZlZDI4OTRhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjI4VDA5NDgzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIwMTM5NGNmNTY4NTAxNzZmOTY2Zjk3MTA4MWUyNWE3NWU2ZWVmNWFmNTM2NzMxYzhlZmU5MzVkYjgzY2FlY2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.2AvaUxyw5avLg7IhF7Bvob6LcYHJEwfQM2j3HmIxeE8',
+    'imagen': 'https://private-user-images.githubusercontent.com/46870050/254909523-494c72bb-4abb-4ff4-b9af-4a72fed2894a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzMzMwMDQsIm5iZiI6MTcxMDMzMjcwNCwicGF0aCI6Ii80Njg3MDA1MC8yNTQ5MDk1MjMtNDk0YzcyYmItNGFiYi00ZmY0LWI5YWYtNGE3MmZlZDI4OTRhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzEzVDEyMjUwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUxM2ViOWM4NTliM2ZiNzBkM2E0NzU5NTViYzYyNmMwNzQ0YjdmMzRmZGMyMGQ0ODdiYjA4MWQ0OTllOTE5MmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.JKQ64_QfqB_R6md3lo8mvgzncbfdB4I-gZdD9d000tY',
     'categorias': 'Front-end',
     'Descripcion': 'Social Network for Latina Women Abroad'
   },
