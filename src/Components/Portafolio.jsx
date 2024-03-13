@@ -5,10 +5,15 @@ import { trabajos } from '../data/trabajos'
 export const Portafolio = () => {
   return (
     <div className='page'>
-      <section className='contac'>
-        <h1 className='heading'>Portafolio.</h1>
-        <p>Ponte en contacto conmigo a través de las redes sociales o correo electrónico.</p>
-
+      <section className='home'>
+        <div className='containere'>
+          <h1 className='heading'>Portafolio.</h1>
+          <p>Mi enfoque se basa en comprender las necesidades del usuario y traducirlas en soluciones creativas y efectivas. He tenido el privilegio de trabajar en una variedad de proyectos, desde sitios web informativos hasta aplicaciones interactivas. Cada experiencia me ha permitido crecer como profesional y perfeccionar mis habilidades en el desarrollo front-end.</p>
+        </div>
+        <div className='sub'>
+        <h3>¡Explora mi portafolio para conocer más sobre mi trabajo!.</h3>
+        </div>
+        
       </section>
 
       <section className='works'>
@@ -17,10 +22,10 @@ export const Portafolio = () => {
             return (
 
               <div key={trabajo.id} className="card">
-                  <span>{trabajo.categorias}</span>
+                <span>{trabajo.categorias}</span>
 
                 <div className="img-box"  >
-                
+
 
                   <img src={trabajo.imagen} alt='img' >
                   </img>
@@ -31,10 +36,10 @@ export const Portafolio = () => {
                     {trabajo.nombre}
                   </h2>
                   <h4>{trabajo.Descripcion}</h4>
-                  <p>{trabajo.tecnologias}</p> 
+                  <p>{trabajo.tecnologias}</p>
 
                   <a href={trabajo.url} target="_blank" rel="noreferrer" > Ir al proyecto </a>
-                  
+
 
                 </div>
 

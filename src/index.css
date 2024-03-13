@@ -69,7 +69,23 @@
  }
 
  .home {
-   display: flex;
+   display: grid;
+   grid-template-columns: auto auto;
+   justify-content: space-evenly;
+   gap: 80px;
+   padding: 2em;
+  align-items: center;
+
+ }
+
+ .home p {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   margin-left: 50px;
+   text-align: justify;
+   font-size: 20px;
+   color: rgb(69, 64, 64);
+   padding-right: 4em;
  }
 
  .perfil {
@@ -97,20 +113,12 @@
    margin: 0%;
  }
 
- .containere {
-   display: flex;
-   flex-direction: column;
-   padding: 3em;
-   margin: 0%;
- }
-
  .containeres {
    display: flex;
    flex-direction: column;
    justify-content: center;
    padding: 2.1em;
    margin: 0%;
-
  }
 
  .graf {
@@ -136,14 +144,12 @@
    color: #db2757;
  }
 
- .abouts {
+
+ .homes {
    display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   padding: 2em;
  }
 
- .home a {
+ .homes a {
    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
    color: #db2757;
    text-decoration: none;
@@ -151,11 +157,11 @@
  }
 
 
- .page .heading {
-   margin-left: 200px;
-   width: 250px;
+ .heading {
+   margin-left: 150px;
+   width: 210px;
    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-   font-size: 68px;
+   font-size: 70px;
    font-weight: bold;
  }
 
@@ -180,16 +186,6 @@
  .subh {
    font-family: 'Montserrat', sans-serif;
    font-weight: bold
- }
-
- .home p {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: bold;
-   margin-left: 70px;
-   text-align: justify;
-   font-size: 21px;
-   color: rgb(69, 64, 64);
-   padding: 0.5em;
  }
 
  .animation {
@@ -233,7 +229,7 @@
    width: 102px;
  }
 
- .home a:hover,
+ .homes a:hover,
  input[type="submit"]:hover,
  button:hover {
    color: hsl(198, 67%, 50%);
@@ -247,6 +243,10 @@
  }
 
  /*Estilos pagina  portafolio*/
+.containere {
+  padding-right: 60px;
+}
+
  .works {
    display: grid;
    grid-template-columns: auto auto auto;
@@ -262,6 +262,7 @@
  }
 
  .works .card {
+   cursor: pointer;
    position: relative;
    display: flex;
    justify-content: center;
@@ -305,12 +306,12 @@
    object-fit: cover;
  }
 
-
  .works .card .content {
+   align-items: center;
    position: absolute;
-   top: 242px;
+   top: 240px;
    width: 100%;
-   height: 45px;
+   height: 48px;
    padding: 0 20px;
    text-align: center;
    overflow: hidden;
@@ -318,7 +319,7 @@
  }
 
  .works .card:hover .content {
-   top: 130px;
+   top: 120px;
    height: 250px;
  }
 
@@ -329,21 +330,27 @@
  }
 
  .works .card .content p {
-  font-size: 13.5px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight:normal;
-  color: rgb(69, 64, 64);
+   margin: 0%;
+   padding-right: 2em;
+   padding-left: 2em;
+   font-size: 14px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: normal;
+   color: rgb(69, 64, 64);
  }
+
  .works .card .content h4 {
-font-size: 16px;
-  color: rgb(69, 64, 64);
- font-weight: border;
- font-family: 'Montserrat', sans-serif;
-}
+   padding-right: 1.5em;
+   padding-left: 1.5em;
+   font-size: 17px;
+   color: rgb(69, 64, 64);
+   font-weight: border;
+   font-family: 'Montserrat', sans-serif;
+ }
 
  .works .card .content a {
    position: relative;
-   top: 15px;
+   top: 25px;
    display: inline-block;
    padding: 6px 15px;
    text-decoration: none;
@@ -353,11 +360,12 @@ font-size: 16px;
    background-color: #424242;
    border-radius: 8px;
    font-size: 16px;
+   margin-top: 20px;
  }
 
  .works .card .content a:hover {
    opacity: 0.8;
-}
+ }
 
  @media (max-width: 480px) {
    .works .card {
@@ -379,7 +387,6 @@ font-size: 16px;
    }
  }
 
-
  .works a {
    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
    color: #db2757;
@@ -393,12 +400,9 @@ font-size: 16px;
 
  }
 
- /*Estilos pagina Contasnto*/
-
+ /*Estilos pagina Contacto*/
  .contac {
-
    margin-bottom: 40px;
-
  }
 
  .contac p {
@@ -412,12 +416,10 @@ font-size: 16px;
 
  .social-icons {
    padding: 20px;
-
    list-style-type: none;
    margin-top: 60px;
    display: flex;
    justify-content: space-evenly;
-
  }
 
  .icon-name {
@@ -428,7 +430,6 @@ font-size: 16px;
    color: rgb(3, 155, 229);
    display: flex;
    align-items: center;
-
  }
 
  .icon-name1 {

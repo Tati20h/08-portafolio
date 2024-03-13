@@ -12,6 +12,7 @@ export const Servicios = () => {
           <h2>
             Desarrollo Web
           </h2>
+          <p>¡Explora mi portafolio para conocer más sobre mi trabajo! Estoy siempre abierto/a a nuevas oportunidades de colaboración. ¿Tienes un proyecto emocionante en mente? ¡Hablemos!</p>
           <p>
             <p>Mi misión es crear soluciones que no solo funcionen, sino que también inspiren y deleiten. Desde proyectos colaborativos hasta desafíos individuales, cada línea de mi código cuenta una historia de aprendizaje y crecimiento..</p>Í
           </p>

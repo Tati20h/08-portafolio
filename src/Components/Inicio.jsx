@@ -6,12 +6,10 @@ import Barras from './Mui/Barras';
 import animation from '../assets/img/men_animation.gif';
 
 
-
 export const Inicio = () => {
   return (
     <div className='page'>
       <section className='home'>
-
         <div>
           <img className='perfil' src={perfil} alt="animation" />
         </div>
@@ -45,27 +43,24 @@ export const Inicio = () => {
       </section>
 
       <section className='lasts-works'>
-
         <div className='grafi'>
           <h2 className='sub'>
             Technicals Skills
           </h2>
           <Barras />
         </div>
-        <div className='containere'>
+        <div className='container'>
           <h3 className='subhead '>
             Coder.</h3>
           <h2 className='subh'>
             In front-end development, simplicity breeds elegance with clean code. Less is more when it comes to design and usability.</h2>
-
           <p>
             Este espacio es el reflejo de mi viaje en el mundo del desarrollo, donde la innovación y la estética se encuentran.
           </p>
         </div>
       </section>
 
-      <section className='home'>
-
+      <section className='homes'>
         <div className='containeres'>
           <h4 className='subheading'>
             <Link to="/portafolio">Proyectos Destacados:</Link>
