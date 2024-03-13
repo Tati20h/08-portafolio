@@ -5,7 +5,7 @@ export const trabajos = [
     'url': 'https://certifications-generator-jmbrv.ondigitalocean.app/',
     'tecnologias': 'HTML, CSS, JS, REACT, FIGMA,MUIX',
     'categorias': 'Front-end',
-    'imagen': 'https://github.com/Tati20h/08-portafolio/blob/main/src/assets/img/PDF.png?raw=true',
+    'imagen': 'https://github.com/Tati20h/08-portafolio/blob/main/src/assets/img/certipdf.png?raw=true',
     'Descripcion': 'Generator of labor certificates in PDF format.'
   },
 
