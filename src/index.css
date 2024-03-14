@@ -72,9 +72,9 @@
    display: grid;
    grid-template-columns: auto auto;
    justify-content: space-evenly;
-   gap: 80px;
+   gap: 50px;
    padding: 2em;
-  align-items: center;
+   align-items: center;
 
  }
 
@@ -85,7 +85,11 @@
    text-align: justify;
    font-size: 20px;
    color: rgb(69, 64, 64);
-   padding-right: 4em;
+   padding-right: 2em;
+ }
+
+ .home h3 {
+   padding-right: 3em;
  }
 
  .perfil {
@@ -243,9 +247,9 @@
  }
 
  /*Estilos pagina  portafolio*/
-.containere {
-  padding-right: 60px;
-}
+ .containere {
+   padding-right: 60px;
+ }
 
  .works {
    display: grid;
@@ -253,6 +257,7 @@
    justify-content: space-evenly;
    gap: 80px;
    padding: 4em;
+   border-top: 1px solid #dddddd;
 
  }
 
@@ -398,6 +403,99 @@
  .works a:hover {
    color: hsl(198, 67%, 50%);
 
+ }
+
+ /*Estilos pagina Curriculum*/
+ .cards-container {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   width: 100%;
+   align-self: center;
+ }
+
+ .cards {
+   border-radius: 18px;
+   margin: 40px 40px 40px 40px;
+   width: 420px;
+   height: 400px;
+   transform-style: preserve-3d;
+   perspective: 600px;
+   transition: 0.5s;
+ }
+
+ .title {
+   color: #000000;
+ }
+
+ .cards .front {
+   color: #757575;
+   border: solid 10px whitesmoke;
+   position: absolute;
+   top: 13%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   transition: 0.5s;
+   -webkit-box-shadow: 0px 10px 13px -7px #000000,
+     5px 5px 15px 5px rgba(0, 0, 0, 0);
+   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+ }
+
+ .cards .front img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+
+ .cards:hover .front {
+   transform: rotateY(-180deg);
+ }
+
+ .cards-container .back {
+   border: solid 10px whitesmoke;
+   width: 100%;
+   height: 100%;
+   background: #1d1d1d;
+   backface-visibility: hidden;
+   transform: rotateY(180deg);
+   transition: 0.5s;
+   -webkit-box-shadow: 0px 10px 13px -7px #000000,
+     5px 5px 15px 5px rgba(0, 0, 0, 0);
+   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+
+ }
+
+ .cards:hover .back {
+   transform: rotateY(0deg);
+ }
+
+ .cards-container .back .details {
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   padding: 20px;
+   box-sizing: border-box;
+ }
+
+ .cards .back .details .caption {
+   font-weight: 100;
+   font-style: italic;
+ }
+
+ .cards .back .details .caption,
+
+ span {
+   color: whitesmoke;
  }
 
  /*Estilos pagina Contacto*/
