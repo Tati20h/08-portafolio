@@ -11,9 +11,9 @@ export const Portafolio = () => {
           <p>Mi enfoque se basa en comprender las necesidades del usuario y traducirlas en soluciones creativas y efectivas. He tenido el privilegio de trabajar en una variedad de proyectos, desde sitios web informativos hasta aplicaciones interactivas. Cada experiencia me ha permitido crecer como profesional y perfeccionar mis habilidades en el desarrollo front-end.</p>
         </div>
         <div className='sub'>
-        <h4>¡Explora mi portafolio para conocer más sobre mi trabajo!.</h4>
+          <h4>¡Explora mi portafolio para conocer más sobre mi trabajo!trabajo! Estoy siempre abierta a nuevas oportunidades de colaboración. ¿Tienes un proyecto emocionante en mente? ¡Hablemos!.</h4>
         </div>
-        
+
       </section>
 
       <section className='works'>
@@ -25,8 +25,6 @@ export const Portafolio = () => {
                 <span>{trabajo.categorias}</span>
 
                 <div className="img-box"  >
-
-
                   <img src={trabajo.imagen} alt='img' >
                   </img>
                 </div>

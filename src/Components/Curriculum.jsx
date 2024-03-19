@@ -24,17 +24,17 @@ export const Curriculum = () => {
 
           <div class="back">
             <div class="details">
-              <h2>Front - End Developer </h2 >
+              <h3>Front - End Developer </h3 >
               <a className='subtitle' href="https://www.credential.net/adec9fcc-3a50-406f-a4a3-9397d9f06e31#gs.42uxdh">
                 Laboratoria
               </a>
               <div class="caption">
                 <p>Our Front-End Programming Bootcamp teaches JavaScript and React, using real-world work scenarios and the SCRUM methodology.</p>
               </div>
-              <br />
-              <h2>Gastronomy Professional</h2>
+
+              <h3>Gastronomy Professional</h3>
               <a className='subtitle' href="https://www.credential.net/adec9fcc-3a50-406f-a4a3-9397d9f06e31#gs.42uxdh">
-               Universidad San Mateo
+                Universidad San Mateo
               </a>
               <div class="caption">
                 <p>Gastronomy professional recognized for best research in a degree project focused on the Fourth Industrial Revolution in Gastronomy.</p>
@@ -42,93 +42,104 @@ export const Curriculum = () => {
 
             </div>
 
-            <div class="social-icon">
 
-            </div>
 
           </div>
         </div>
 
-        <div class="cards">
+        <div class="cards1">
           <h2 className='title'>Professional Experience</h2>
+
           <div class="front">
             <img src={experiens} alt="animation" />
           </div>
+
           <div class="back">
             <div class="details">
-            <h2>Front - End Developer </h2 >
-            <a className='subtitle' href="https://www.credential.net/adec9fcc-3a50-406f-a4a3-9397d9f06e31#gs.42uxdh">
-                Laboratoria
-              </a>
+              <h3>Freelance Front-End Developer </h3>
+              <p>Pidgin Contact Solutions</p>
+
               <div class="caption">
-                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
-                quisquam iure in! Corporis expedita consequatur tenetur rem
-                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
-                unde itaque ratione "
+                Web project for generating employment certificates for a technology company, also including validation using hex codes. Developed as a single project using Express for the server and React for the front end.
               </div>
-              <h2>Front - End Developer </h2 >
-              <a className='subtitle' href="https://www.credential.net/adec9fcc-3a50-406f-a4a3-9397d9f06e31#gs.42uxdh">
-                Laboratoria
-              </a>
-              <span>Senior Developer</span>
+              <p> start Date:&nbsp;December&nbsp;&nbsp;2023</p>
+              <br />
+              <h3>Manual QA </h3>
+              <p>IdealSolutions</p>
+              <div class="caption">
+                Responsible for manual and API testing of web platforms using agile methodologies (Scrum), as well as web development.
+              </div>
+              <p className='mes'> start Date:&nbsp;01/06/2016</p>
+              <p className='mes'> End Date:&nbsp;01/08/2020</p>
+
+              <br />
+              <h3 >Cost Analyst at A&Br </h3>
+              <p>Club Campestre Guaymaral</p>
+              <div class="caption">
+                I began as a kitchen assistant, and my excellent performance and teamwork quickly earned me a promotion to Cook II. In this role, I excelled due to my leadership and agility.
+              </div>
+              <p className='mes'> start Date:&nbsp;01/06/2016</p>
+              <p className='mes'> End Date:&nbsp;01/08/2020</p>
+
             </div>
           </div>
         </div>
 
         <div class="cards">
-          <h2 className='title'>Courses</h2>
+          <h2 className='title'> Courses </h2>
           <div class="front">
             <img src={courses} alt="animation" />
           </div>
+
           <div class="back">
             <div class="details">
-            <h2>Front - End Developer </h2 >
-            <a className='subtitle' href="https://www.credential.net/adec9fcc-3a50-406f-a4a3-9397d9f06e31#gs.42uxdh">
-                Laboratoria
-              </a>
+
+              <h3> Front - End Developer </h3 >
+              <p > Platzi </p>
+
               <div class="caption">
-                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
-                quisquam iure in! Corporis expedita consequatur tenetur rem
-                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
-                unde itaque ratione "
+                I have taken various web development courses along with their tools such as Git, Jira, Postman, JavaScript, React, HTML, CSS, SQL databases, and DevOps
               </div>
-              <h2>Front - End Developer </h2 >
-              <a className='subtitle' href="https://www.credential.net/adec9fcc-3a50-406f-a4a3-9397d9f06e31#gs.42uxdh">
-                Laboratoria
-              </a>
-              <span>Senior Developer</span>
+
             </div>
           </div>
         </div>
 
         <div class="cards">
-          <h2 className='title'>Certifications</h2>
+          <h2 className='title'> Certifications </h2>
           <div class="front">
             <img src={Certifications} alt="animation" />
           </div>
           <div class="back">
             <div class="details">
-            <h2>Front - End Developer </h2 >
-            <a className='subtitle' href="https://www.credential.net/adec9fcc-3a50-406f-a4a3-9397d9f06e31#gs.42uxdh">
-                Laboratoria
+              <h3> Master React </h3>
+              <a className='subtitle' href="https://udemy-certificate.s3.amazonaws.com/image/UC-b7e882ff-2dc6-47a8-be8b-46e5d6d5a027.jpg">
+                Udemy
               </a>
-              <div class="caption">
-                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
-                quisquam iure in! Corporis expedita consequatur tenetur rem
-                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
-                unde itaque ratione "
-              </div>
-              <h2>Front - End Developer </h2 >
-              <a className='subtitle' href="https://www.credential.net/adec9fcc-3a50-406f-a4a3-9397d9f06e31#gs.42uxdh">
-                Laboratoria
+
+              <h3> Basic Digital Marketing Course </h3>
+              <a className='subtitle' href="https://drive.google.com/file/d/1ETWUKHE9SlwC4WA5rsmv4xYqgnzE6nhE/view?usp=drive_link">
+                Google Academic
               </a>
-              <span>Senior Developer</span>
+
+              <h3>Diploma in Gastronomic Marketing</h3>
+              <a className='subtitle' href="https://drive.google.com/file/d/1qu23a-Hc88JzZPUx2GcjM2Zjtn720LYX/view?usp=drive_link">
+                Fundación Universitaria San Mateo
+              </a>
+
+              <h3> Diploma in Food Science Applied to Culinary Techniques </h3>
+              <a className='subtitle' href="https://drive.google.com/file/d/1E973NIMgTfuWYwMEoqGpLK9WVRsRciSF/view?usp=drive_link">
+                Fundación Universitaria San Mateo
+              </a>
+
             </div>
+
           </div>
+
         </div>
 
-      </section>
+      </section >
 
-    </div>
+    </div >
   )
 }
