@@ -63,7 +63,7 @@ export const Inicio = () => {
       <section className='homes'>
         <div className='containers'>
           <h4 className='subheading'>
-            <Link to="/portfolio">Featured projects</Link>
+            <Link to="/portfolio">See my featured projects</Link>
           </h4>
 
         </div>
