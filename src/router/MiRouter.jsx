@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom"
 import { Inicio } from "../Components/Inicio"
 import { Portafolio } from "../Components/Portafolio"
 import { Curriculum } from "../Components/Curriculum"
-import { Servicios } from "../Components/Servicios"
+
 import { Contacto } from "../Components/Contacto"
 import { HeaderNav } from '../Components/layout/HeaderNav'
 import { Footer } from '../Components/layout/Footer'
@@ -20,10 +20,10 @@ export const MiRouter = () => {
       <section className='conten'>
         <Routes>
           <Route path='/' element={<Navigate to="/inicio" />} />
-          <Route path='/inicio' element={<Inicio />} />
-          <Route path='/portafolio' element={<Portafolio />} />
+          <Route path='/about me' element={<Inicio />} />
+          <Route path='/portfolio' element={<Portafolio />} />
           <Route path='/curriculum' element={<Curriculum />} />
-          <Route path='/contacto' element={<Contacto />} />
+          <Route path='/contact' element={<Contacto />} />
           <Route path='/proyecto/:id' element={<Proyecto />} />
 
           <Route path='*' element={

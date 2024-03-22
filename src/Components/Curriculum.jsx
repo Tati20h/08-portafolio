@@ -3,14 +3,27 @@ import educacion from '../assets/img/educacion.jpeg'
 import experiens from '../assets/img/experiencia lab.jpeg'
 import courses from '../assets/img/cursos.jpeg'
 import Certifications from '../assets/img/certificado.jpeg'
+import animate from '../assets/img/universal.gif';
 
 
 export const Curriculum = () => {
   return (
     <div className='page'>
 
-      <section className='homes'>
-        <h1 className='heading'> Curriculum. </h1>
+      <section className='box-cont'>
+        <div className='box'>
+          <h1 className='heading'> Curriculum. </h1>
+          <h2 >
+            Thank you for visiting and exploring my portfolio! Feel free to browse, get inspired and discover what we can achieve together.
+          </h2>
+        </div>
+        <div className='animate'>
+          <img  src={animate} alt="animate" />
+
+        </div>
+      
+
+
       </section>
 
       <section class="cards-container">
@@ -33,7 +46,7 @@ export const Curriculum = () => {
               </div>
 
               <h3>Gastronomy Professional</h3>
-              <a className='subtitle' href="https://www.credential.net/adec9fcc-3a50-406f-a4a3-9397d9f06e31#gs.42uxdh">
+              <a className='subtitle' href="https://drive.google.com/file/d/1BAfb0paO9B8k3WkS7JCF6oV9aLZxwlLC/view?usp=sharing">
                 Universidad San Mateo
               </a>
               <div class="caption">

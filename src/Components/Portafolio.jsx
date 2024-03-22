@@ -7,11 +7,11 @@ export const Portafolio = () => {
     <div className='page'>
       <section className='home'>
         <div className='containere'>
-          <h1 className='heading'>Portafolio.</h1>
-          <p>Mi enfoque se basa en comprender las necesidades del usuario y traducirlas en soluciones creativas y efectivas. He tenido el privilegio de trabajar en una variedad de proyectos, desde sitios web informativos hasta aplicaciones interactivas. Cada experiencia me ha permitido crecer como profesional y perfeccionar mis habilidades en el desarrollo front-end.</p>
+          <h1 className='heading'>Portfolio.</h1>
+          <p>My approach is based on understanding user needs and translating them into creative and effective solutions. I've had the privilege of working on a variety of projects, from informative websites to interactive applications. Each experience has allowed me to grow as a professional and hone my skills in front-end development.</p>
         </div>
         <div className='sub'>
-          <h4>¡Explora mi portafolio para conocer más sobre mi trabajo!trabajo! Estoy siempre abierta a nuevas oportunidades de colaboración. ¿Tienes un proyecto emocionante en mente? ¡Hablemos!.</h4>
+          <h4>Explore my portfolio to learn more about my work! </h4>
         </div>
 
       </section>

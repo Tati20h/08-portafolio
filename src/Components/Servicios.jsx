@@ -22,10 +22,10 @@ export const Servicios = () => {
           <h2>
             Diseño web
           </h2>
+
           <p>
-            <p>
-              Acompáñame en este viaje donde la tecnología se encuentra con la creatividad, y donde cada proyecto es una oportunidad para superar límites y explorar nuevas posibilidades.</p>Í
-          </p>
+            Acompáñame en este viaje donde la tecnología se encuentra con la creatividad, y donde cada proyecto es una oportunidad para superar límites y explorar nuevas posibilidades.</p>Í
+
 
         </article>
         <article className='service'>
