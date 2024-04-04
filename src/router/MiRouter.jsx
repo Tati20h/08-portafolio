@@ -3,7 +3,6 @@ import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom"
 import { Inicio } from "../Components/Inicio"
 import { Portafolio } from "../Components/Portafolio"
 import { Curriculum } from "../Components/Curriculum"
-
 import { Contacto } from "../Components/Contacto"
 import { HeaderNav } from '../Components/layout/HeaderNav'
 import { Footer } from '../Components/layout/Footer'

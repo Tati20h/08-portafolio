@@ -7,13 +7,13 @@ export default function Graf() {
             series={[
                 {
                     data: [
-                        { id: 0, value: 15, label: 'Adaptabilidad' },
-                        { id: 1, value: 15, label: 'Empatia' },
-                        { id: 2, value: 15, label: 'Resolución de problemas' },
-                        { id: 3, value: 15, label: 'Trabajo en equipo' },
-                        { id: 4, value: 20, label: 'Liderazgo' },
-                        { id: 5, value: 20, label: 'Compañerismo' },
-                        
+                        { id: 0, value: 15, label: 'Adaptability' },
+                        { id: 1, value: 15, label: 'Empathy' },
+                        { id: 2, value: 15, label: 'Problema Resolution' },
+                        { id: 3, value: 15, label: 'Teamwork' },
+                        { id: 4, value: 20, label: 'Leadership' },
+                        { id: 5, value: 20, label: 'Fellowship' },
+
 
                     ],
                     innerRadius: 20,

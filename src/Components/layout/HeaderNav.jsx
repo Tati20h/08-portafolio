@@ -1,32 +1,34 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/img/logo3.png';
-
+import './Headernav.css'; // Importa tu archivo de estilos CSS
 
 export const HeaderNav = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className='header'>
-      <div >
+      <div>
         <img className='logo' src={logo} alt='logo' />
       </div>
-      <nav>
+      <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About me </NavLink>
-          </li>
-          <li>
-            <NavLink to="/portfolio" className={({ isActive }) => isActive ? "active" : ""}>Portfolio </NavLink>
-          </li>
-          <li>
-            <NavLink to="/curriculum" className={({ isActive }) => isActive ? "active" : ""}>Curriculum </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
-          </li>
+          <li><NavLink to="/about" activeClassName="active" onClick={toggleMenu}>About me</NavLink></li>
+          <li><NavLink to="/portfolio" activeClassName="active" onClick={toggleMenu}>Portfolio</NavLink></li>
+          <li><NavLink to="/curriculum" activeClassName="active" onClick={toggleMenu}>Curriculum</NavLink></li>
+          <li><NavLink to="/contact" activeClassName="active" onClick={toggleMenu}>Contact</NavLink></li>
         </ul>
-
       </nav>
-
+      <div className={`toggle ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
-  )
-}
+  );
+};

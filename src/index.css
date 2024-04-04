@@ -1,783 +1,1039 @@
- body {
-   margin: 0;
-   font-family: "proxima nova bold", "Helvetica Neue",
-     'Ubuntu', 'Helvetica', 'Arial', 'Sans-serif';
- }
-
- code {
-   font-family: "proxima nova bold", "Helvetica Neue",
-     'Ubuntu', 'Helvetica', 'Arial', 'Sans-serif';
- }
-
- /*Estilos Cabesera */
-
- .header {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   height: 100px;
-   background: rgb(1, 1, 1);
-   margin-bottom: 15px;
- }
-
- .logo {
-   width: 95px;
-   height: 95px;
- }
-
- .header nav ul {
-   width: auto;
-   float: right;
-   font-size: 1.6rem;
-   background: transparent;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   list-style: none;
-   height: 20px;
- }
-
- .header li {
-   position: static;
-   font-weight: bold;
-   font-size: 18px;
-   margin-left: 20px;
-   font-family: 'Montserrat', sans-serif;
-   margin-right: 20px;
- }
-
- .header li a {
-   color: #ffffff;
-   text-decoration: none;
-   transition: all 300ms;
- }
-
- .header .active {
-   color: hsl(187, 46%, 52%);
- }
-
- .header a:hover {
-   color: hsl(187, 46%, 52%);
- }
-
- /*Estilos home */
- .conten {
-   align-content: center;
-   width: 90%;
-   height: 100%;
-
- }
-
- .home {
-   display: grid;
-   grid-template-columns: auto auto;
-   justify-content: space-evenly;
-   gap: 50px;
-   padding: 3em;
-   align-items: center;
-
- }
-
- .home p {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: bold;
-   margin-left: 50px;
-   text-align: justify;
-   font-size: 23px;
-   color: rgb(69, 64, 64);
-   padding-right: 3.8em;
- }
-
- .home h3 {
-   padding-right: 3em;
- }
-
- .perfil {
-   margin-left: 30px;
-   position: relative;
-   animation: img 2s linear 1s;
-   animation-fill-mode: both;
- }
-
- @keyframes img {
-   from {
-     left: 0px;
-     top: 0px;
-   }
-
-   to {
-     left: 750px;
-     top: 0px;
-   }
-
- }
-
- .abouts {
-   position: relative;
-   animation: prr 2s linear 1s;
-   animation-fill-mode: both;
-
- }
-
- @keyframes prr {
-   from {
-     right: 0px;
-     top: 0px;
-   }
-
-   to {
-     right: 550px;
-     top: 0px;
-   }
- }
-
- .lasts-works {
-   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-   display: flex;
-   border-top: 0.5px solid #dddddd;
-   background: #fafafa;
- }
-
- .lasts-works p {
-   font-family: 'Montserrat', sans-serif;
-   text-align: center;
-   font-size: 21px;
-   color: rgb(69, 64, 64);
- }
-
- .container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   padding: 3em;
-   margin: 0%;
- }
-
- .containers {
-   display: flex;
-   align-items: center;
-   padding: 2em;
-   margin: 0%;
- }
-
- .graf {
-   display: flex;
-   flex-direction: column;
-   padding: 5em;
-   align-content: center;
- }
-
-
- .grafi {
-   margin: 30px;
-   padding: 1em;
-   align-content: center;
- }
-
- .page {
-   margin-left: 75px;
-   text-align: center;
-   width: 100%;
- }
-
- .page strong {
-   color: #db2757;
-   font-weight: bold;
- }
-
-
- .homes {
-   display: flex;
-   padding-left: 20px;
- }
-
- .homes a {
-   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-   color: #db2757;
-   text-decoration: none;
-   transition: all 500ms;
- }
-
- .homes a:hover {
-   font-size: 60px;
- }
-
- .heading {
-   margin-left: 150px;
-   width: 210px;
-   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-   font-size: 70px;
-   font-weight: bold;
- }
-
- .subheading {
-   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-   font-size: 38px;
-   font-weight: bold;
-   color: #424242
- }
-
- .subhead {
-   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-   font-size: 50px;
-   font-weight: bold;
-   color: #424242
- }
-
- .sub {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 30px;
- }
-
- .subh {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: bold;
-   text-align: justify;
- }
-
- .animation {
-   width: 480px;
-   border-radius: 3%;
-   margin: 40px;
- }
-
-
- .input {
-   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-   display: block;
-   padding: 12px;
-   margin-top: 25px;
-   width: 250px;
-   height: 16px;
-   font-size: 18px;
- }
-
- .motiv {
-   display: block;
-   padding: 10px;
-   text-align: center;
-   font-size: 16px;
-   width: 280px;
-   height: 100px;
-   margin-top: 25px;
- }
-
- input[type="submit"],
- button {
-   margin-top: 30px;
-   font-size: 20px;
-   font-weight: bolder;
-   padding: 10px;
-   border: 0px;
-   border-radius: 4px;
-   color: #db2757;
-   text-decoration: none;
-   transition: all 300ms;
-
- }
-
- .homes a:hover,
- input[type="submit"]:hover,
- button:hover {
-   color: hsl(198, 67%, 50%);
-
- }
-
-
-
- /*Estilos pagina  portafolio*/
- .containere {
-   padding-right: 60px;
- }
-
- .works {
-   border-top: 0.8px solid #dddddd;
-   display: grid;
-   grid-template-columns: auto auto auto;
-   justify-content: space-evenly;
-   gap: 80px;
-   padding: 4em;
-   border-top: 1px solid #dddddd;
-
- }
-
- .works span {
-   color: #333333;
-   top: 10px;
- }
-
- .works .card {
-   cursor: pointer;
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: flex-start;
-   width: 370px;
-   max-width: 100%;
-   height: 320px;
-   background: white;
-   border-radius: 20px;
-   transition: 0.5s;
-   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
- }
-
- .works .card:hover {
-   height: 378px;
- }
-
- .works .card .img-box {
-   position: absolute;
-   top: 30px;
-   width: 300px;
-   height: 220px;
-   background: #000000;
-   border-radius: 12px;
-   overflow: hidden;
-   transition: 0.5s;
- }
-
- .works .card:hover .img-box {
-   top: -95px;
-   scale: 0.75;
-   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
- }
-
- .works .card .img-box img {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
- }
-
- .works .card .content {
-   align-items: center;
-   position: absolute;
-   top: 240px;
-   width: 100%;
-   height: 48px;
-   padding: 20px 20px;
-   text-align: center;
-   overflow: hidden;
-   transition: 0.5s;
- }
-
- .works .card:hover .content {
-   top: 120px;
-   height: 250px;
- }
-
- .works .card .content h2 {
-   font-size: 1.5rem;
-   font-weight: bold;
-   color: #333333;
- }
-
- .works .card .content p {
-   margin: 0%;
-   padding-right: 2em;
-   padding-left: 2em;
-   font-size: 14px;
-   font-family: 'Montserrat', sans-serif;
-   font-weight: normal;
-   color: rgb(69, 64, 64);
- }
-
- .works .card .content h4 {
-   padding-right: 1.5em;
-   padding-left: 1.5em;
-   font-size: 17px;
-   color: rgb(69, 64, 64);
-   font-weight: border;
-   font-family: 'Montserrat', sans-serif;
- }
-
- .works .card .content a {
-   position: relative;
-   top: 25px;
-   display: inline-block;
-   padding: 6px 15px;
-   text-decoration: none;
-   background: var(--clr);
-   color: #ffffff;
-   font-weight: 500;
-   background-color: #424242;
-   border-radius: 8px;
-   font-size: 16px;
-   margin-top: 20px;
- }
-
- .works .card .content a:hover {
-   opacity: 0.8;
- }
-
- @media (max-width: 480px) {
-   .works .card {
-     width: 230px;
-     border-radius: 15px;
-   }
-
-   .works .card .img-box {
-     width: 185px;
-     border-radius: 10px;
-   }
-
-   .works .card .content p {
-     font-size: 0.8rem;
-   }
-
-   .works .card .content a {
-     font-size: 0.9rem;
-   }
- }
-
- .works a {
-   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-   color: #db2757;
-   text-decoration: none;
-   transition: all 500ms;
-   font-size: 25px;
- }
-
- .works a:hover {
-   color: hsl(198, 67%, 50%);
-
- }
-
- /*Estilos pagina Curriculum*/
- .box-cont {
-   display: flex;
-   padding: 3em;
- }
-
- .box,
- h2 {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: bold;
-   font-size: 26px;
-   padding-left: 2em;
-   padding-right: 3em;
- }
-
- .animate img{
-   border-radius: 6%;
-   width: 450px;
-   height: 460px;
-   padding: 1em;
-   position: relative;
- }
-
-
- .box-cont::before {
-   clear: both;
-   position: absolute;
-
- }
-
-
-
-
-
- .cards-container {
-   display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
-   width: 100%;
-   height: 100%;
-   padding-bottom: 4.5em;
-   background: white;
-   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
- }
-
- .cards-container .cards {
-   border-radius: 48px;
-   padding-bottom: 5em;
-   margin: 40px 40px 40px 40px;
-   width: 450px;
-   height: 350px;
-   perspective: 600px;
-   transition: 0.8s;
- }
-
- .cards1 {
-   border-radius: 18px;
-   padding-bottom: 5em;
-   margin: 40px 40px 40px 40px;
-   width: 450px;
-   height: 350px;
-   transform-style: preserve-3d;
-   perspective: 600px;
-   transition: 0.8s;
- }
-
- .cards1:hover {
-   height: 700px;
- }
-
- .cards .title {
-   margin-bottom: 15px;
-   color: #000000;
-
- }
-
- .cards1 .title {
-   color: #000000;
-   margin-bottom: 15px;
- }
-
- .cards .front {
-   border-radius: 20px;
-   color: #757575;
-   position: absolute;
-   top: 2.5%;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   transition: 0.5s;
-   box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
- }
-
- .cards1 .front {
-   color: #757575;
-   position: absolute;
-   top: 2%;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   transition: 0.5s;
-   box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
- }
-
- .cards .front img {
-   border-radius: 20px;
-   position: absolute;
-   margin-top: 52px;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
- }
-
- .cards1 .front img {
-   border-radius: 20px;
-   position: absolute;
-   margin-top: 52px;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
- }
-
- .cards:hover .front {
-   transform: rotateY(-180deg);
- }
-
- .cards1:hover .front {
-   transform: rotateY(-180deg);
- }
-
- .cards-container .back {
-   border-radius: 18px;
-   padding-bottom: 5em;
-   background-color: #322f2f;
-   opacity: 0.88;
-   backface-visibility: hidden;
-   transform: rotateY(180deg);
-   transition: 0.5s;
-   box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
-   width: 100%;
-   height: 100%;
- }
-
- .cards1-container .back {
-   padding-bottom: 3.5em;
-   background-color: #322f2f;
-   opacity: 0.88;
-   backface-visibility: hidden;
-   transform: rotateY(180deg);
-   transition: 0.5s;
-   box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
-   width: 100%;
-   height: 100%;
- }
-
- .cards:hover .back {
-   transform: rotateY(-0deg);
- }
-
- .cards1:hover .back {
-   transform: rotateY(-0deg);
- }
-
- .cards .back .details {
-   left: 50%;
-   top: 45%;
-   transform: translate(-50%, -50%);
-   position: absolute;
-   width: 100%;
-   text-align: center;
-   padding: 55px 50px;
-   box-sizing: border-box;
- }
-
- .cards1 .back .details {
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   position: absolute;
-   width: 100%;
-   padding: 55px 50px;
-   box-sizing: border-box;
- }
-
- .mes {
-   margin: 0%;
-
- }
-
- .cards .back .details,
- h3 {
-   color: white;
-   font-weight: bold;
-   font-family: 'Montserrat', sans-serif;
-
- }
-
- .cards1,
- h3 {
-   color: white;
-   font-weight: bold;
-   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
- }
-
-
- .cards .back .details .caption {
-   font-family: 'Montserrat', sans-serif;
-   color: white;
-   font-weight: bold;
-   text-align: justify;
- }
-
- .cards1 .back .details .caption {
-   font-family: 'Montserrat', sans-serif;
-   color: white;
-   font-weight: bold;
-   text-align: justify;
-   margin-bottom: 10px;
- }
-
- .cards1 .back .details .mes {
-   margin: 0;
- }
-
- .cards-container a {
-   position: relative;
-   display: inline-block;
-   color: #c77a8e;
-   text-decoration: none;
-   background: var(--clr);
-   font-weight: 500;
-   background-color: #424242;
-   padding: 6px 15px;
-   border-radius: 8px;
-
- }
-
- .subtitle {
-   margin: 0%;
-   font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-   font-weight: bold;
-   text-decoration: none;
-   font-size: 15px;
- }
-
- .subtitle:hover {
-   color: rgb(137, 176, 204);
- }
-
-
- /*Estilos pagina Contacto*/
- .contac {
-   margin-bottom: 40px;
- }
-
- .contac p {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: bold;
-   padding: 0 340px 0;
-   text-align-last: center;
-   font-size: 26px;
- }
-
-
- .social-icons {
-   padding: 20px;
-   list-style-type: none;
-   margin-top: 60px;
-   display: flex;
-   justify-content: space-evenly;
- }
-
- .icon-name {
-   font-weight: bold;
-   margin-left: 30px;
-   font-size: 18px;
-   text-decoration: none;
-   color: rgb(3, 155, 229);
-   display: flex;
-   align-items: center;
- }
-
- .icon-name1 {
-   font-weight: bold;
-   margin-left: 30px;
-   color: #333333;
- }
-
- .contact {
-   font-family: 'Montserrat', sans-serif;
-   background: #fafafa;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 440px;
-   height: 500px;
-   box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
-   border: solid 1px lightslategray;
-   border-radius: 8px;
- }
-
- /*Estilos footer */
-
- .footer {
-   height: 80px;
-   display: flex;
-   line-height: 7px;
-   text-align: center;
-   font-size: 18px;
-   border-top: 3px solid black;
-   background: #f5f5f5;
-   justify-items: center;
-   color: #757575;
-   justify-content: space-evenly;
-   align-content: center;
-   align-items: center;
- }
-
- .cont {
-   margin-bottom: 30px;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   background: #fafafa;
-   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-
- }
-
- .icon {
-   margin-right: 15px;
-   margin-left: 15px;
-   width: 66px;
- }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "proxima nova bold", "Helvetica Neue",
+    'Ubuntu', 'Helvetica', 'Arial', 'Sans-serif';
+  margin: 0;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.layout {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.conten {
+  align-content: center;
+  width: 100%;
+  min-height: 650px;
+  margin: 0%;
+}
+
+/*Stiles home */
+
+.home {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 2em;
+  align-items: center;
+
+}
+
+.home p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-left: 50px;
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(69, 64, 64);
+  padding-right: 3.8em;
+}
+
+.perfil {
+  margin-left: 30px;
+  position: relative;
+  animation: img 2s linear 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes img {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+
+  to {
+    left: 620px;
+    top: 0px;
+  }
+
+}
+
+.abouts {
+  padding: 50px;
+  position: relative;
+  animation: prr 2s linear 1s;
+  animation-fill-mode: both;
+
+}
+
+@keyframes prr {
+  from {
+    right: 0px;
+    top: 0px;
+  }
+
+  to {
+    right: 550px;
+    top: 0px;
+  }
+}
+
+@media only screen and (min-width:1820px) {
+
+
+  .perfil {
+    position: relative;
+    animation: img 2s linear 1s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes img {
+    from {
+      left: 0px;
+      top: 0px;
+    }
+
+    to {
+      left: 1100px;
+      top: 0px;
+    }
+
+  }
+}
+
+.abouts {
+  padding: 50px;
+  position: relative;
+  animation: prr 2s linear 1s;
+  animation-fill-mode: both;
+
+}
+
+@keyframes prr {
+  from {
+    right: 0px;
+    top: 0px;
+  }
+
+  to {
+    right: 550px;
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .heading {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 45px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+  }
+
+  .home p {
+    margin-top: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+
+  }
+
+  .perfil {
+    width: 300px;
+    animation: img 2s linear 1s;
+    animation-fill-mode: both;
+    margin-left: 5px;
+  }
+
+  @keyframes img {
+    from {
+      top: 0px;
+    }
+
+    to {
+      top: 360px;
+    }
+
+  }
+
+  .abouts {
+    padding: 2px;
+    position: relative;
+    margin: 0%;
+    animation: prr 2s linear 1s;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes prr {
+    from {
+      bottom: 0px;
+    }
+
+    to {
+
+      bottom: 360px;
+    }
+  }
+
+
+  .lasts-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .homes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .animation {
+    width: 500px;
+  }
+
+  .subheading {
+    font-size: 28px;
+
+  }
+
+  .Circle {
+    width: 100px;
+  }
+}
+
+
+
+
+.lasts-works {
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  border-top: 0.5px solid #dddddd;
+  background: #fafafa;
+}
+
+.lasts-works p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(69, 64, 64);
+  padding: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3em;
+  margin: 0%;
+}
+
+.containers {
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  margin: 0%;
+}
+
+.graf {
+  display: flex;
+  flex-direction: column;
+  padding: 5em;
+  align-content: center;
+}
+
+
+.grafi {
+  margin: 30px;
+  padding: 1em;
+  align-content: center;
+}
+
+.page {
+
+  text-align: center;
+
+}
+
+.page strong {
+  color: #db2757;
+  font-weight: bold;
+}
+
+
+.homes {
+  display: flex;
+  padding-left: 20px;
+}
+
+.homes a {
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  color: #db2757;
+  text-decoration: none;
+  transition: all 500ms;
+}
+
+.homes a:hover {
+  font-size: 48px;
+}
+
+.heading {
+  display: flex;
+  margin-left: 150px;
+  width: 200px;
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.subheading {
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: #424242
+}
+
+.subhead {
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #424242
+}
+
+.sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.subh {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.animation {
+  width: 480px;
+  border-radius: 3%;
+  margin: 40px;
+}
+
+.input {
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  display: block;
+  padding: 12px;
+  margin-top: 25px;
+  width: 250px;
+  height: 16px;
+  font-size: 18px;
+}
+
+.motiv {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  width: 280px;
+  height: 100px;
+  margin-top: 25px;
+}
+
+input[type="submit"],
+button {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  border: 0px;
+  border-radius: 4px;
+  color: #db2757;
+  text-decoration: none;
+  transition: all 300ms;
+
+}
+
+.homes a:hover,
+input[type="submit"]:hover,
+button:hover {
+  color: hsl(198, 67%, 50%);
+}
+
+
+
+@media (max-width: 480px) {
+  .heading {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 45px;
+  }
+
+  .animation {
+    width: 150px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    gap: 0%;
+  }
+
+  .home p {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 1%;
+    margin: 0%;
+  }
+
+  .perfil {
+    width: 220px;
+    animation: img 2s linear 1s;
+    animation-fill-mode: forwards;
+    margin-left: 5px;
+  }
+
+  @keyframes img {
+    from {
+      top: 0px;
+    }
+
+    to {
+      top: 370px;
+    }
+
+  }
+
+  .abouts {
+    padding: 10px;
+    position: relative;
+    animation: prr 2s linear 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes prr {
+    from {
+      bottom: 0px;
+    }
+
+    to {
+      bottom: 265px;
+    }
+  }
+
+  .lasts-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .homes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .animation {
+    width: 270px;
+  }
+
+  .subheading {
+    font-size: 26px;
+
+  }
+
+  .container {
+    padding: 1em;
+  }
+
+  .containere {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+
+  }
+
+  .home h4 {
+    text-align: center;
+    margin-left: 45px;
+    font-size: 25px;
+  }
+
+  .subh {
+    font-size: 22px;
+  }
+
+  .homes a:hover {
+    font-size: 35px;
+  }
+
+  .graf {
+    display: none;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .grafi {
+    display: none;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .box-cont h2 {
+    padding: 0%;
+  }
+
+  .contac p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 14px;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-name {
+    margin-top: 20px;
+
+  }
+
+  .cont {
+    width: 40%;
+  }
+
+  .contact {
+    width: 100px;
+    height: 250px;
+  }
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input {
+    width: 150px;
+  }
+}
+
+/*Stiles   portfolio*/
+
+.home h4 {
+  padding-right: 3em;
+}
+
+.containere {
+  padding: 60px;
+}
+
+.works {
+  border-top: 0.8px solid #dddddd;
+  /*display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 1em;
+  padding-bottom: 3em;
+  border-top: 1px solid #dddddd;
+
+}
+
+.works span {
+  color: #333333;
+  top: 10px;
+}
+
+.works .card {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 370px;
+  max-width: 100%;
+  height: 320px;
+  background: white;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.works .card:hover {
+  height: 378px;
+}
+
+.works .card .img-box {
+  position: absolute;
+  top: 30px;
+  width: 300px;
+  height: 220px;
+  background: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.works .card:hover .img-box {
+  top: -95px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.works .card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works .card .content {
+  align-items: center;
+  position: absolute;
+  top: 240px;
+  width: 100%;
+  height: 48px;
+  padding: 20px 20px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.works .card:hover .content {
+  top: 120px;
+  height: 250px;
+}
+
+.works .card .content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.works .card .content p {
+  margin: 0%;
+  padding-right: 2em;
+  padding-left: 2em;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: rgb(69, 64, 64);
+}
+
+.works .card .content h4 {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  font-size: 17px;
+  color: rgb(69, 64, 64);
+  font-weight: border;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.works .card .content a {
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  padding: 6px 15px;
+  text-decoration: none;
+  background: var(--clr);
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #424242;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.works .card .content a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .works .card {
+    width: 230px;
+    border-radius: 15px;
+  }
+
+  .works .card .img-box {
+    width: 185px;
+    border-radius: 10px;
+  }
+
+  .works .card .content p {
+    font-size: 0.8rem;
+  }
+
+  .works .card .content a {
+    font-size: 0.9rem;
+  }
+}
+
+.works a {
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  color: #db2757;
+  text-decoration: none;
+  transition: all 500ms;
+  font-size: 25px;
+}
+
+.works a:hover {
+  color: hsl(198, 67%, 50%);
+
+}
+
+/*StilEs  Curriculum*/
+.box-cont {
+  display: flex;
+  padding: 3em;
+}
+
+.box,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding-left: 2em;
+  padding-right: 3em;
+}
+
+.animate img {
+  border-radius: 6%;
+  width: 450px;
+  height: 460px;
+  padding: 1em;
+  position: relative;
+}
+
+.box-cont::before {
+  clear: both;
+  position: absolute;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 4.5em;
+  background: white;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.cards-container .cards {
+  border-radius: 48px;
+  padding-bottom: 5em;
+  margin: 40px 40px 40px 40px;
+  width: 450px;
+  height: 350px;
+  perspective: 600px;
+  transition: 0.8s;
+}
+
+.cards1 {
+  border-radius: 18px;
+  padding-bottom: 5em;
+  margin: 40px 40px 40px 40px;
+  width: 450px;
+  height: 350px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.8s;
+}
+
+.cards1:hover {
+  height: 700px;
+}
+
+.cards .title {
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.cards1 .title {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.cards .front {
+  border-radius: 20px;
+  color: #757575;
+  position: absolute;
+  top: 2.5%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
+}
+
+.cards1 .front {
+  color: #757575;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
+}
+
+.cards .front img {
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 52px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards1 .front img {
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 52px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.cards1:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.cards-container .back {
+  border-radius: 18px;
+  padding-bottom: 5em;
+  background-color: #322f2f;
+  opacity: 0.88;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
+  width: 100%;
+  height: 100%;
+}
+
+.cards1-container .back {
+  padding-bottom: 3.5em;
+  background-color: #322f2f;
+  opacity: 0.88;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
+  width: 100%;
+  height: 100%;
+}
+
+.cards:hover .back {
+  transform: rotateY(-0deg);
+}
+
+.cards1:hover .back {
+  transform: rotateY(-0deg);
+}
+
+.cards .back .details {
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 55px 50px;
+  box-sizing: border-box;
+}
+
+.cards1 .back .details {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  padding: 55px 50px;
+  box-sizing: border-box;
+}
+
+.mes {
+  margin: 0%;
+}
+
+.cards .back .details,
+h3 {
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.cards1,
+h3 {
+  color: white;
+  font-weight: bold;
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+
+.cards .back .details .caption {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.cards1 .back .details .caption {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.cards1 .back .details .mes {
+  margin: 0;
+}
+
+.cards-container a {
+  position: relative;
+  display: inline-block;
+  color: #c77a8e;
+  text-decoration: none;
+  background: var(--clr);
+  font-weight: 500;
+  background-color: #424242;
+  padding: 6px 15px;
+  border-radius: 8px;
+}
+
+.subtitle {
+  margin: 0%;
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.subtitle:hover {
+  color: rgb(137, 176, 204);
+}
+
+/*Stiles  Contact*/
+.contac {
+  margin-bottom: 40px;
+}
+
+.contac p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  text-align-last: center;
+  font-size: 25px;
+}
+
+.social-icons {
+  padding: 20px;
+  list-style-type: none;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-name {
+  font-weight: bold;
+  margin-left: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(3, 155, 229);
+  display: flex;
+  align-items: center;
+}
+
+.icon-name1 {
+  font-weight: bold;
+  margin-left: 30px;
+  color: #333333;
+}
+
+.cont {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #fafafa;
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.contact {
+  font-family: 'Montserrat', sans-serif;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(4, 170, 199, 0.35);
+  border: solid 1px lightslategray;
+  border-radius: 8px;
+}
+
+/*Styles footer */
+
+.footer {
+  height: 80px;
+  display: flex;
+  line-height: 7px;
+  text-align: center;
+  font-size: 18px;
+  border-top: 3px solid black;
+  background: #f5f5f5;
+  color: #757575;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 15px;
+  margin-left: 15px;
+
+}
+
+@media only screen and (max-width: 425px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .footer div {
+    margin-top: 20px;
+  }
+}

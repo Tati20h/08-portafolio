@@ -41,7 +41,7 @@ export const Contacto = () => {
         <div>
           <img className='animation' src={animation} alt="animation" />
         </div>
-        <form className='contact' action="mailto=ltatianahernandez@sanmateo.edu.co">
+        <form className='contact' action="mailto:ltatianahernandez@sanmateo.edu.co">
 
           <input
             className='input'

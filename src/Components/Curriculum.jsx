@@ -3,7 +3,7 @@ import educacion from '../assets/img/educacion.jpeg'
 import experiens from '../assets/img/experiencia lab.jpeg'
 import courses from '../assets/img/cursos.jpeg'
 import Certifications from '../assets/img/certificado.jpeg'
-import animate from '../assets/img/universal.gif';
+
 
 
 export const Curriculum = () => {
@@ -17,13 +17,6 @@ export const Curriculum = () => {
             Thank you for visiting and exploring my portfolio! Feel free to browse, get inspired and discover what we can achieve together.
           </h2>
         </div>
-        <div className='animate'>
-          <img  src={animate} alt="animate" />
-
-        </div>
-      
-
-
       </section>
 
       <section class="cards-container">

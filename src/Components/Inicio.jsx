@@ -10,9 +10,10 @@ export const Inicio = () => {
   return (
     <div className='page'>
       <section className='home'>
-        <div>
+      <div>
           <img className='perfil' src={perfil} alt="animation" />
         </div>
+
 
         <div className='abouts'>
           <h1 className='heading'>About me.</h1>
@@ -22,6 +23,7 @@ export const Inicio = () => {
             <strong> Front-end Programming </strong>merging the creative approach and fascination for building unique experiences in <strong> Web Design and Development.".</strong>
           </p>
         </div>
+       
 
       </section>
 
@@ -37,7 +39,7 @@ export const Inicio = () => {
 
         <div className='graf'>
           <h2 className='sub'> Soft Skills</h2>
-          <Graf className='barras' />
+          <Graf className='Circle' />
         </div>
 
       </section>
@@ -47,7 +49,7 @@ export const Inicio = () => {
           <h2 className='sub'>
             Technicals Skills
           </h2>
-          <Barras />
+          <Barras className='Barras' />
         </div>
         <div className='container'>
           <h3 className='subhead '>
