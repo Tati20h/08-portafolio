@@ -57,7 +57,7 @@ export const Contacto = () => {
             type="text"
             placeholder='Email ' />
           <textarea
-            className='motiv'
+            className='motive'
             type="text"
             placeholder='Message ' />
           <input
