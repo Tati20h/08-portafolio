@@ -57,7 +57,7 @@ body {
   }
 
   to {
-    left: 620px;
+    left: 660px;
     top: 0px;
   }
 
@@ -81,6 +81,13 @@ body {
     right: 550px;
     top: 0px;
   }
+}
+
+.hobbies {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 6rem;
 }
 
 @media only screen and (min-width:1820px) {
@@ -160,7 +167,7 @@ body {
     }
 
     to {
-      top: 360px;
+      top: 480px;
     }
 
   }
@@ -181,7 +188,7 @@ body {
 
     to {
 
-      bottom: 360px;
+      bottom: 350px;
     }
   }
 
@@ -376,7 +383,7 @@ button:hover {
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 768px)  {
   .heading {
     margin-top: 20px;
     margin-left: 15px;
@@ -417,7 +424,7 @@ button:hover {
     }
 
     to {
-      top: 370px;
+      top: 520px;
     }
 
   }
@@ -568,9 +575,6 @@ button:hover {
 
 .works {
   border-top: 0.8px solid #dddddd;
-  /*display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-evenly;*/
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

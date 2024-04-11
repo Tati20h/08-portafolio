@@ -14,7 +14,7 @@ export const Portafolio = () => {
         </div>
 
         <div className='sub'>
-          <h4>Explore my portfolio to learn more about my work! </h4>
+          <h4>Explore my portfolio to learn about my career! </h4>
         </div>
 
       </section>

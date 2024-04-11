@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/img/logo3.png';
-import './Headernav.css'; // Importa tu archivo de estilos CSS
+import './Headernav.css'; 
 
 export const HeaderNav = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);

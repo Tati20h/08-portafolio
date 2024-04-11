@@ -4,13 +4,14 @@ import perfil from '../assets/img/perfil.png';
 import Graf from './Mui/Graf';
 import Barras from './Mui/Barras';
 import animation from '../assets/img/men_animation.gif';
+import { Gallery } from './layout/Gallery';
 
 
 export const Inicio = () => {
   return (
     <div className='page'>
       <section className='home'>
-      <div>
+        <div>
           <img className='perfil' src={perfil} alt="animation" />
         </div>
 
@@ -19,12 +20,20 @@ export const Inicio = () => {
           <h1 className='heading'>About me.</h1>
 
           <p >
-            I am <strong>Lucy Hernández Avendaño,</strong> a passionate  <strong>professional in gastronomy </strong> who decided to venture into the world of
-            <strong> Front-end Programming </strong>merging the creative approach and fascination for building unique experiences in <strong> Web Design and Development.".</strong>
+            I am <strong>Lucy Hernández Avendaño,</strong> a passionate  <strong>professional in gastronomy </strong>from Bogotá, Colombia. </p>
+          <p>I decided to venture into the world of
+            <strong> Front-end Programming </strong>merging the creative approach and fascination for building unique experiences in <strong> Web Design and Development.</strong>
+          </p>
+          <p>
+            When I'm not working with pixels or coding, you'll find me cooking, playing sports like hiking, climbing, or traveling with my pet "Mushhuu" around the wor
           </p>
         </div>
-       
 
+
+      </section>
+
+      <section className='hobbies'>
+        <Gallery />
       </section>
 
       <section className='lasts-works'>
