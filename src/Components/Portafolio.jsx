@@ -1,16 +1,16 @@
 import React from 'react'
 import { trabajos } from '../data/trabajos'
-//import { Link } from 'react-router-dom';//
+
 
 export const Portafolio = () => {
   return (
     <div className='page'>
 
-      <section className='home'>
+      <section className='portfolio'>
 
         <div className='containere'>
           <h1 className='heading'>Portfolio.</h1>
-          <p>My approach is based on understanding user needs and translating them into creative and effective solutions. I've had the privilege of working on a variety of projects, from informative websites to interactive applications. Each experience has allowed me to grow as a professional and hone my skills in front-end development.</p>
+          <p className='based'>My approach is based on understanding user needs and translating them into creative and effective solutions. I've had the privilege of working on a variety of projects, from informative websites to interactive applications. Each experience has allowed me to grow as a professional and hone my skills in front-end development.</p>
         </div>
 
         <div className='sub'>

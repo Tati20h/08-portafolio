@@ -10,8 +10,8 @@ export const Curriculum = () => {
   return (
     <div className='page'>
 
-      <section className='box-cont'>
-        <div className='box'>
+      <section className='boxi-cont'>
+        <div className='boxi'>
           <h1 className='heading'> Curriculum. </h1>
           <h2 >
             Thank you for visiting and exploring my portfolio! Feel free to browse, get inspired and discover what we can achieve together.
@@ -47,8 +47,6 @@ export const Curriculum = () => {
               </div>
 
             </div>
-
-
 
           </div>
         </div>

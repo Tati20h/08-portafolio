@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/img/logo3.png';
+import logo from '../../assets/img/logo.png';
 import './Headernav.css'; 
 
 export const HeaderNav = () => {
@@ -13,7 +13,9 @@ export const HeaderNav = () => {
   return (
     <header className='header'>
       <div>
-        <img className='logo' src={logo} alt='logo' />
+        <NavLink to="/about">
+        <img className='logo' src={logo} href="" alt='logo' />
+        </NavLink>
       </div>
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul>

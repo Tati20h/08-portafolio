@@ -17,15 +17,16 @@ export const Inicio = () => {
 
 
         <div className='abouts'>
-          <h1 className='heading'>About me.</h1>
+          <h1 className='heading'>About.</h1>
 
-          <p >
-            I am <strong>Lucy Hernández Avendaño,</strong> a passionate  <strong>professional in gastronomy </strong>from Bogotá, Colombia. </p>
+          <p className='intro' >
+            I am <strong>Lucy Hernández Avendaño,</strong> a passionate  professional in gastronomy from <strong>Bogotá, Colombia.</strong> </p>
           <p>I decided to venture into the world of
-            <strong> Front-end Programming </strong>merging the creative approach and fascination for building unique experiences in <strong> Web Design and Development.</strong>
+             Front-end Programming merging the creative approach and fascination for building unique experiences in Web Design and Development.
           </p>
+
           <p>
-            When I'm not working with pixels or coding, you'll find me cooking, playing sports like hiking, climbing, or traveling with my pet "Mushhuu" around the wor
+            When I'm not working with pixels or coding, you'll find me cooking, playing sports like hiking, climbing, or traveling with my pet "Mushhuu" around the wor.
           </p>
         </div>
 
@@ -47,7 +48,7 @@ export const Inicio = () => {
         </div>
 
         <div className='graf'>
-          <h2 className='sub'> Soft Skills</h2>
+          <h2 className='subheading'> Soft Skills</h2>
           <Graf className='Circle' />
         </div>
 
@@ -55,7 +56,7 @@ export const Inicio = () => {
 
       <section className='lasts-works'>
         <div className='grafi'>
-          <h2 className='sub'>
+          <h2 className='subheading'>
             Technicals Skills
           </h2>
           <Barras className='Barras' />

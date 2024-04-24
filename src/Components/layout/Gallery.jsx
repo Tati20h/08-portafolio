@@ -3,7 +3,6 @@ import cat from '../../assets/img/cat.jpg';
 import desktop from '../../assets/img/desktop.jpeg';
 import wine from '../../assets/img/wine.jpg';
 import love from '../../assets/img/love.jpg';
-import pasta from '../../assets/img/pasta.jpg'
 import sports from '../../assets/img/sport.jpg';
 import mont from '../../assets/img/Mont.jpg';
 import './Gallery.css';
@@ -15,7 +14,7 @@ export function Gallery() {
 
       <div className="gallery">
 
-        <article class="card">
+        <article class="cardi">
           <figure>
             <img src={cat} alt="Puppy" />
             <figcaption>
@@ -24,7 +23,7 @@ export function Gallery() {
           </figure>
         </article>
 
-        <article className="card">
+        <article className="cardi">
           <figure>
             <img src={desktop} alt="Desktop" />
             <figcaption>
@@ -32,7 +31,7 @@ export function Gallery() {
             </figcaption>
           </figure>
         </article>
-        <article className="card">
+        <article className="cardi">
           <figure>
             <img
               src={wine}
@@ -43,7 +42,7 @@ export function Gallery() {
           </figure>
         </article>
 
-        <article className="card">
+        <article className="cardi">
           <figure>
             <img src={love} alt="Love" />
             <figcaption>
@@ -52,17 +51,7 @@ export function Gallery() {
           </figure>
         </article>
 
-        <article className="card">
-          <figure>
-            <img src={pasta} alt="Gastronomy" />
-            <figcaption>
-              <h3>Gastronomy</h3>
-            </figcaption>
-          </figure>
-        </article>
-
-
-        <article class="card">
+        <article class="cardi">
           <figure>
             <img src={sports} alt="Puppy" />
             <figcaption>
@@ -71,7 +60,7 @@ export function Gallery() {
           </figure>
         </article>
 
-        <article class="card">
+        <article class="cardi">
           <figure>
             <img src={mont} alt="mont" />
             <figcaption>

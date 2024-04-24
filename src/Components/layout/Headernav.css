@@ -2,32 +2,33 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 110px;
+    height: 100px;
     background: rgb(1, 1, 1);
     width: 100%;
     min-width: 320px;
 }
 
 .logo {
-    width: 95px;
-    height: 95px;
+    margin-top: 5px;
+    width: 80px;
+    height: 80px;
 }
 
 .nav {
     display: flex;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .nav ul {
     display: flex;
     list-style: none;
-    
+
 }
 
 .nav li a {
-   
+
     color: #ffffff;
     text-decoration: none;
     transition: all 300ms;
@@ -41,11 +42,12 @@
 }
 
 .nav a:hover {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .toggle {
     display: none;
+    margin-right: 10PX;
 }
 
 .toggle span {
@@ -56,30 +58,39 @@
     margin: 5px 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
     .header {
         display: flex;
         justify-content: space-between;
+      
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+        margin-left: 20px;
     }
 
     .nav {
         display: none;
         flex-direction: column;
+        width: 100%;
         position: absolute;
         top: 100px;
-        width: 100%;
+        right: 0;
         background-color: #222222;
-        z-index: 1;
-        border-radius: 0 0 65% 0;
+        z-index: 3;
+        border-radius: 0 0 15% 15%;
+        align-items: center;
+        opacity:95%;
     }
 
     .nav.open {
         display: flex;
     }
 
-    .nav li a{
-
-        line-height: 5rem;
+    .nav li a {
+        line-height: 4rem;
         margin: 0;
         padding: 2rem 5.5rem;
     }
@@ -89,7 +100,8 @@
         list-style: none;
         flex-direction: column;
         align-items: center;
-      
+        padding: 10px 10px;
+
     }
 
     .toggle.active {
