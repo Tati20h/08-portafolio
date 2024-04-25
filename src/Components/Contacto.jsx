@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import animation from '../assets/img/learn.gif';
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import { FiPhoneCall } from "react-icons/fi";
+import emailjs from '@emailjs/browser';
+
 
 export const Contacto = () => {
+
+  const refForm = useRef();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const serviceId = "service_pn0feiw";
+    const templateId = "template_0n5345t";
+    const apiKey = "5-Q68fHtXRcjBIa1X";
+
+    emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
+
+      .then(result => console.log(result.text))
+
+      .catch(error => console.log(error))
+
+  }
+
   return (
     <div className='page'>
       <section className='contac'>
@@ -41,28 +61,34 @@ export const Contacto = () => {
         <div>
           <img className='animation' src={animation} alt="animation" />
         </div>
-        <form className='contact' action="mailto:ltatianahernandez@sanmateo.edu.co">
+
+
+        <form action='' className='contact' ref={refForm} onSubmit={handleSubmit} >
 
           <input
             className='input'
             autoComplete='on'
             type="text"
-            placeholder='Name' />
+            placeholder='Name'
+            name='name' required />
+
           <input
             className='input'
-            type="text"
-            placeholder='Last Name' />
-          <input
-            className='input'
-            type="text"
-            placeholder='Email ' />
+            type="email"
+            placeholder='Email '
+            id='email'
+            name='user_email' required />
           <textarea
+            id=''
             className='motive'
             type="text"
-            placeholder='Message ' />
+            placeholder='Message '
+            name='user_message' required
+          />
           <input
             type="submit"
-            value='Send Email' />
+            value='Send Email' 
+          />
 
         </form>
 

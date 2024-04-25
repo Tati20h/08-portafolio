@@ -167,8 +167,8 @@ body {
     }
   }
 }
-  @media (min-width:1201px) and (max-width: 2560px)
-  {
+
+@media (min-width:1201px) and (max-width: 2560px) {
   .containere {
     padding: 3em;
   }
@@ -184,6 +184,7 @@ body {
   .sub {
     padding: 3em;
   }
+
   .boxi-cont {
 
     padding: 3.5em;
@@ -283,6 +284,7 @@ body {
   .contac {
     padding: 3em;
   }
+
   .boxi-cont {
 
     padding: 3.5em;
@@ -688,14 +690,14 @@ button:hover {
     font-size: 35px;
   }
 
- 
+
   .boxi h2 {
     margin-top: 40px;
     font-size: 18px;
   }
 
   .boxi-cont {
-  
+
     padding: 1em;
   }
 
@@ -750,7 +752,7 @@ button:hover {
 }
 
 
-@media (min-width:320px) and (max-width: 641px){
+@media (min-width:320px) and (max-width: 641px) {
 
   .graf {
     display: none;
@@ -845,7 +847,7 @@ button:hover {
 
 .works .card:hover .img-box {
   top: -95px;
-  scale: 0.75;
+  scale: 0.80;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
@@ -861,7 +863,7 @@ button:hover {
 .works .card .content {
   align-items: center;
   position: absolute;
-  top: 240px;
+  top: 236px;
   width: 100%;
   height: 48px;
   padding: 20px 20px;
@@ -919,20 +921,25 @@ button:hover {
   opacity: 0.8;
 }
 
-@media (max-width: 480px) {
+@media (min-width:320px) and (max-width: 425px) {
 
   .works .card {
-    width: 235px;
+    width: 318px;
     border-radius: 15px;
   }
 
   .works .card .img-box {
-    width: 185px;
+    width: 210px;
     border-radius: 10px;
   }
 
   .works .card .content h2 {
-    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+
+  .works .card .content h4 {
+    margin-top: 25px;
   }
 
   .works .card .content p {
@@ -940,7 +947,7 @@ button:hover {
   }
 
   .works .card .content a {
-    top: 19px;
+    top: 18px;
     margin-top: 16px;
     font-size: 0.9rem;
   }
@@ -1119,7 +1126,7 @@ h2 {
 
 .cards .back .details {
   left: 50%;
-  top: 45%;
+  top: 48%;
   transform: translate(-50%, -50%);
   position: absolute;
   width: 100%;
@@ -1200,13 +1207,37 @@ h3 {
   color: rgb(137, 176, 204);
 }
 
-@media (max-width: 480px) {
+@media (min-width:320px) and (max-width: 425px)  {
+
   .cards-container .cards {
+    font-size:13px ;
     width: 320px;
+  
   }
 
   .cards-container .cards1 {
-    width: 380px;
+    font-size:13px ;
+    width: 330px;
+}
+
+  .cards1 .back .details .caption {
+    margin-bottom: 10px;
+  }
+  .cards .back .details {
+    padding:  36px;
+     }
+   
+  .cards1 .back .details {
+ padding:  36px;
+  }
+
+  .cards1,
+h3 {
+  margin: 10px;
+}
+
+  .subtitle {
+    font-size: 12px;
   }
 
 }
