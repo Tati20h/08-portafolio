@@ -4,23 +4,33 @@ import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import { FiPhoneCall } from "react-icons/fi";
 import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
 
 
 export const Contacto = () => {
+
+  const seeAlert = () => {
+    swal({
+      title: "Message sent succesfully!🚀",
+      text: "We'll be in contact soon.👩‍💻",
+      icon: "success",
+      button: "ok",
+      timer: "4000",
+    });
+  }
 
   const refForm = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const serviceId = "service_pn0feiw";
-    const templateId = "template_0n5345t";
-    const apiKey = "5-Q68fHtXRcjBIa1X";
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
+    const apiKey = process.env.REACT_APP_API_KEY;
 
     emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
 
       .then(result => console.log(result.text))
-
       .catch(error => console.log(error))
 
   }
@@ -70,6 +80,7 @@ export const Contacto = () => {
             autoComplete='on'
             type="text"
             placeholder='Name'
+            id='name'
             name='name' required />
 
           <input
@@ -79,15 +90,16 @@ export const Contacto = () => {
             id='email'
             name='user_email' required />
           <textarea
-            id=''
+            id='message'
             className='motive'
             type="text"
             placeholder='Message '
             name='user_message' required
           />
           <input
+            onClick={() => seeAlert()}
             type="submit"
-            value='Send Email' 
+            value='Send Email'
           />
 
         </form>

@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   gap: 15px;
   scale: 1.4;
-  
+
 }
 
 .cardi {
@@ -36,7 +36,9 @@
   transform: scale(1.15);
 }
 
-.cardi:hover figcaption {
+
+
+.cardi:hover  figcaption {
   font-size: 0.6rem;
   position: absolute;
   height: 80px;
@@ -49,8 +51,8 @@
   color: white;
   left: 0px;
   bottom: 0px;
-  padding-left: 12px;
-  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
 }
 
 .cardi:hover~.card {
@@ -69,10 +71,16 @@
     align-items: center;
   }
 
-  .cardi { 
+  .cardi {
     width: 72px;
     height: 80px;
-   
+  }
+
+  .letter {
+ 
+    margin: 0%;
+    margin-bottom: 2px;
+    font-size: 0.6rem;
   }
 }
 
@@ -80,17 +88,17 @@
 @media (min-width:768px) and (max-width: 1199px) {
   .gallery {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     padding: 2em;
     align-items: center;
     scale: 1.3;
-  
+
   }
 
-  .cardi{ 
-    width:90px;
+  .cardi {
+    width: 90px;
     height: 90px;
-   
+
   }
 }
 
@@ -98,15 +106,15 @@
 @media (min-width:1200px) and (max-width: 2245px) {
   .gallery {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     padding: 2em;
     align-items: center;
     scale: 1.5;
   }
 
-  .cardi { 
-    width:100px;
-    height: 110px;
-   
+  .cardi {
+    width: 120px;
+    height: 130px;
+
   }
 }
