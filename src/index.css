@@ -103,7 +103,6 @@ body {
     width: 90%;
     margin-left: 5%;
   }
-
 }
 
 @media (min-width:1600px) and (max-width: 2560px) {
@@ -115,16 +114,12 @@ body {
     animation: none;
   }
 
-
-
   .abouts {
     padding: 1em;
     position: relative;
     animation: none
   }
-
 }
-
 
 @media (min-width:1201px) and (max-width: 1600px) {
 
@@ -192,7 +187,6 @@ body {
   }
 
 }
-
 
 /*Styles DESKTOPS */
 @media (min-width:1025px) and (max-width: 1200px) {
@@ -328,7 +322,7 @@ body {
     }
 
     to {
-      top: 490px;
+      top: 520px;
     }
   }
 
@@ -338,8 +332,7 @@ body {
     margin: 0%;
     animation: prr 2s linear 1s;
     animation-fill-mode: forwards;
-
-  }
+ }
 
   @keyframes prr {
     from {
@@ -348,7 +341,7 @@ body {
 
     to {
 
-      bottom: 350px;
+      bottom: 340px;
     }
   }
 
@@ -551,6 +544,7 @@ button:hover {
 
 /*Styles  FORM MOBILE */
 @media (max-width: 820px) {
+  
   .cont {
     width: 40%;
     display: flex;
@@ -560,8 +554,6 @@ button:hover {
   .input {
     padding: 6px;
   }
-
-
 }
 
 /*Styles MOBILE*/
@@ -609,7 +601,7 @@ button:hover {
     }
 
     to {
-      top: 620px;
+      top: 580px;
     }
   }
 
@@ -626,7 +618,7 @@ button:hover {
     }
 
     to {
-      bottom: 260px;
+      bottom: 310px;
     }
   }
 
