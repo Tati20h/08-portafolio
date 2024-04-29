@@ -33,6 +33,8 @@ export const Contacto = () => {
       .then(result => console.log(result.text))
       .catch(error => console.log(error))
 
+      event.target.reset()
+
   }
 
   return (
