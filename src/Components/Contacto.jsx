@@ -28,10 +28,13 @@ export const Contacto = () => {
     const templateId = process.env.REACT_APP_TEMPLATE_ID;
     const apiKey = process.env.REACT_APP_API_KEY;
 
-    emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
+    console.log(refForm.current)
 
-      .then(result => console.log(result.text))
-      .catch(error => console.log(error))
+      emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
+        .then(result => {
+          seeAlert()
+        console.log(result)})
+        .catch(error => console.log(error))
 
       event.target.reset()
 
@@ -99,7 +102,6 @@ export const Contacto = () => {
             name='user_message' required
           />
           <input
-            onClick={() => seeAlert()}
             type="submit"
             value='Send Email'
           />
