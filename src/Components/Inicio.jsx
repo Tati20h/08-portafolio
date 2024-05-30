@@ -26,7 +26,7 @@ export const Inicio = () => {
           </p>
 
           <p>
-            When I'm not working with pixels or coding, you'll find me cooking, playing sports like hiking, climbing, or traveling with my pet "Mushhuu" around the wor.
+            When I'm not working with pixels or coding, you'll find me cooking, playing sports like hiking, climbing, or traveling with my pet "Mushhuu" around the world.
           </p>
         </div>
 

@@ -131,9 +131,9 @@ export const Curriculum = () => {
                 Fundación Universitaria San Mateo
               </a>
 
-              <h3> Diploma in Food Science Applied to Culinary Techniques </h3>
-              <a className='subtitle' href="https://drive.google.com/file/d/1E973NIMgTfuWYwMEoqGpLK9WVRsRciSF/view?usp=drive_link">
-                Fundación Universitaria San Mateo
+              <h3> Introduction to MongoDB </h3>
+              <a className='subtitle' href="https://learn.mongodb.com/c/j7YQHrAXQYCUcQad2cScKw">
+              MongoDB
               </a>
 
             </div>
