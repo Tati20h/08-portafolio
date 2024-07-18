@@ -1,5 +1,15 @@
 export const trabajos = [
   {
+    'id': 'Pharma',
+    'nombre': 'Pharma.',
+    'url': 'https://tati20h.github.io/pharma/#/home',
+    'tecnologias': 'REACT.JS,MUIX, OpenFDA PI',
+    'categorias': 'Full-Stack',
+    'imagen': 'https://github.com/Tati20h/pharma/blob/main/src/assets/img/logo.png?raw=true',
+    'Descripcion': 'Web in React that uses the OpenFDA API that allows searching for US medications'
+  },
+
+  {
     'id': 'frontend-ehour',
     'nombre': 'Labor certificates.',
     'url': 'https://certifications-generator-jmbrv.ondigitalocean.app/',
