@@ -1,0 +1,151 @@
+.gastronomy {
+  display: flex;
+  justify-content:center; /* Align items to the start for horizontal scroll */
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+  cursor: pointer;
+  overflow-x: scroll; /* Allow horizontal scrolling */
+scroll-snap-type: x mandatory;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.artGastronomy {
+  scroll-snap-align:center ;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  width: 65px;
+  height: 500px;
+  border-radius: 36px;
+  display: inline-flex; /* Change to inline-flex for horizontal alignment */
+  align-items: flex-end;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.artGastronomy h3,
+p {
+  margin: 0;
+}
+
+.artGastronomy h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(255 255 255 / 96%);
+}
+
+.artGastronomy p {
+  color: rgb(255 255 255 / 66%);
+}
+
+.artGastronomy.active {
+  width: 400px;
+  opacity: 1;
+}
+
+.artGastronomy .material-symbols-outlined {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  background: rgb(255 255 255 / 80%);
+  border-radius: 50%;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.artGastronomy .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  padding: 100px 0 20px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 80%));
+  transition: 0.25s;
+}
+
+.artGastronomy.active .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.artGastronomy img {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .artGastronomy {
+      height: 400px;
+  }
+
+  .artGastronomy.active {
+      width: 300px;
+  }
+
+  .artGastronomy .content {
+      width: 300px;
+      padding: 80px 0 20px 20px;
+      gap: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .artGastronomy {
+      height: 300px;
+  }
+
+  .artGastronomy.active {
+      width: 250px;
+  }
+
+  .artGastronomy .content {
+      width: 250px;
+      padding: 60px 0 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gastronomy {
+      padding: 20px;
+     
+  }
+  
+  .artGastronomy {
+ 
+      height: 200px;
+      width: 50px; /* Adjust width for smaller screens */
+  }
+
+  .artGastronomy.active {
+      width: 200px;
+  }
+
+  .artGastronomy .content {
+      width: 180px;
+      padding: 40px 0 20px 8px;
+  }
+
+  .artGastronomy h3 {
+      font-size: 15.5px;
+      font-weight: bold;
+  }
+
+  .artGastronomy .material-symbols-outlined {
+
+   display:none;
+  }
+}

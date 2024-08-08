@@ -1,5 +1,5 @@
 import React from 'react'
-import { trabajos } from '../data/trabajos'
+import { trabajos } from '../data/Trabajos'
 
 
 export const Portafolio = () => {

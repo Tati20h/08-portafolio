@@ -21,6 +21,7 @@ export const HeaderNav = () => {
         <ul>
           <li><NavLink to="/about" activeClassName="active" onClick={toggleMenu}>About me</NavLink></li>
           <li><NavLink to="/portfolio" activeClassName="active" onClick={toggleMenu}>Portfolio</NavLink></li>
+          <li><NavLink to="/blog" activeClassName="active" onClick={toggleMenu}>Gastro-Blog</NavLink></li>
           <li><NavLink to="/curriculum" activeClassName="active" onClick={toggleMenu}>Curriculum</NavLink></li>
           <li><NavLink to="/contact" activeClassName="active" onClick={toggleMenu}>Contact</NavLink></li>
         </ul>
