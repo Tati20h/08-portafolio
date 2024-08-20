@@ -6,23 +6,23 @@ function PropertyCard() {
   return (
     <>
       <section className="blog">
-        {cards.map((cards) => {
+        {cards.map((card) => {
           return (
-            <div key={cards.id} className="card1">
-              <img src={cards.image} alt="Property" />
+            <div key={card.id} className="card1" id={`section${card.id}`}>
+              <img src={card.image} alt="Property" />
               <div>
-                <span>{cards.id}</span>
-                <h1>{cards.header}</h1>
+                <span>{card.id}</span>
+                <h1>{card.header}</h1>
 
                 <h2>Ingredients:</h2>
                 <ul>
-                  {cards.ingredients.map((i) => {
+                  {card.ingredients.map((i) => {
                     return <li>{i}</li>;
                   })}
                 </ul>
                 <h2>Instructions:</h2>
-                <ol >
-                  {cards.instructions.map((i) => {
+                <ol>
+                  {card.instructions.map((i) => {
                     return <li>{i}</li>;
                   })}
                 </ol>

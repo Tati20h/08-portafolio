@@ -5,7 +5,7 @@ import image5 from "../assets/img/image5.jpg";
 
 export const cards = [
   {
-    id: "Lunch",
+    id: "1",
     header: "Bolognese Pasta",
     image: image1,
     ingredients: [
@@ -34,7 +34,7 @@ export const cards = [
     ],
   },
   {
-    id: "Breakfast",
+    id: "2",
     header: "Vegetable Omelette",
     image: image2,
     ingredients: [
@@ -57,7 +57,7 @@ export const cards = [
     ],
   },
   {
-    id: "Dessert",
+    id: "3",
     header: "Muffis Cacao 100%",
     image: image4,
     ingredients: [
@@ -81,7 +81,7 @@ export const cards = [
     ],
   },
   {
-    id: "Lunch",
+    id: "4",
     header: " Vegetable Bowl",
     image: image5,
     ingredients: [
