@@ -8,7 +8,6 @@ export const Accordions = () => {
   const handleToggle = (index) => setActive(index);
 
   const scrollToSection = (section) => {
-  
     const sectionDoc = document.getElementById(section);
     if (sectionDoc) {
       sectionDoc.scrollIntoView({ behavior: "smooth" });
@@ -25,13 +24,13 @@ export const Accordions = () => {
             className={`${isActive} artGastronomy`}
             onClick={() => handleToggle(index)}
           >
-            <img
-              src={card.image}
+            <img src={card.image} />
+            <div
+              className="content"
               onClick={() => {
                 scrollToSection(`section${card.id}`);
               }}
-            />
-            <div className="content">
+            >
               <span className="material-symbols-outlined">LH</span>
               <div>
                 <h3>{card.header}</h3>
