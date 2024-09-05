@@ -140,7 +140,7 @@ export const Curriculum = () => {
               <h3>Front-End Development Libraries</h3>
               <a
                 className="subtitle"
-                href="https://www.freecodecamp.org/espanol/certification/Tatii20h/front-end-development-li"
+                href="https://freecodecamp.org/espanol/certification/Tatii20h/front-end-development-libraries"
               >
                 freeCodeCamp
               </a>
