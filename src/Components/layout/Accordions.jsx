@@ -24,7 +24,7 @@ export const Accordions = () => {
             className={`${isActive} artGastronomy`}
             onClick={() => handleToggle(index)}
           >
-            <img src={card.image} />
+            <img alt="cook" src={card.image} />
             <div
               className="content"
               onClick={() => {
