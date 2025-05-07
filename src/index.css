@@ -180,6 +180,7 @@ body {
   }
 
   .contac {
+
     padding: 3em;
   }
 
@@ -565,6 +566,7 @@ button:hover {
     margin-top: 30px;
     gap: 100px;
   }
+
   .heading {
     margin-top: 30px;
     font-size: 52px;
@@ -908,6 +910,8 @@ button:hover {
   opacity: 0.8;
 }
 
+
+
 @media (min-width: 320px) and (max-width: 425px) {
   .works .card {
     width: 318px;
@@ -1205,6 +1209,7 @@ h3 {
   .cards1 .back .details .caption {
     margin-bottom: 10px;
   }
+
   .cards .back .details {
     padding: 36px;
   }

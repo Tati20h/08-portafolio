@@ -30,13 +30,14 @@ export const Contacto = () => {
 
     console.log(refForm.current)
 
-      emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
-        .then(result => {
-          seeAlert()
-        console.log(result)})
-        .catch(error => console.log(error))
+    emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
+      .then(result => {
+        seeAlert()
+        console.log(result)
+      })
+      .catch(error => console.log(error))
 
-      event.target.reset()
+    event.target.reset()
 
   }
 
