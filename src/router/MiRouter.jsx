@@ -8,6 +8,7 @@ import { HeaderNav } from '../Components/layout/HeaderNav'
 import { Footer } from '../Components/layout/Footer'
 import { Proyecto } from '../Components/Proyecto'
 import { Blog } from '../Components/Blog'
+import { PageNotFound } from '../Components/PageNotFound'
 
 export const MiRouter = () => {
   return (
@@ -27,10 +28,7 @@ export const MiRouter = () => {
           <Route path='/proyecto/:id' element={<Proyecto />} />
           <Route path='/blog' element={<Blog />} />
 
-          <Route path='*' element={
-            <div className='page'>
-              <h1 className='heading'>Error 404 </h1>
-            </div>} />
+          <Route path='*' element={<PageNotFound /> } />
         </Routes>
       </section>
 
