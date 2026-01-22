@@ -1,0 +1,44 @@
+.page-not-found-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .page-not-found-container > div {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile (default) */
+  @media (max-width: 600px) {
+    .page-not-found-container {
+      max-width: 300px;
+      padding: 10px;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .page-not-found-container {
+      max-width: 450px;
+      padding: 15px;
+    }
+  }
+  
+  /* Laptop */
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .page-not-found-container {
+      max-width: 600px;
+      padding: 20px;
+    }
+  }
+  
+  /* Pantallas grandes */
+  @media (min-width: 1201px) {
+    .page-not-found-container {
+      max-width: 800px;
+      padding: 30px;
+    }
+  }
+  

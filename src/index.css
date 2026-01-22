@@ -21,6 +21,10 @@ body {
   margin: 0%;
 }
 
+
+
+
+
 /*Styles home */
 .blog {
   display: flex;
@@ -446,9 +450,13 @@ body {
   text-align: center;
 }
 
-.page strong {
+.intro strong {
   color: #db2757;
   font-weight: bold;
+}
+
+p strong{
+  color: rgb(3, 155, 229);
 }
 
 .homes {

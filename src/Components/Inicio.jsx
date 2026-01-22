@@ -19,63 +19,75 @@ export const Inicio = () => {
         <div className='abouts'>
           <h1 className='heading'>About.</h1>
 
-          <p className='intro' >
-            I am <strong>Lucy Hernández Avendaño,</strong> a passionate  professional in gastronomy from <strong>Bogotá, Colombia.</strong> </p>
-          <p>I decided to venture into the world of
-             Front-end Programming merging the creative approach and fascination for building unique experiences in Web Design and Development.
+          <p className='intro'>
+            I am a <strong>Front-End Developer</strong> with experience building web applications using <strong>React, JavaScript, and TypeScript</strong>.
+            I focus on creating functional, accessible, and user-centered interfaces.
           </p>
 
           <p>
-            When I'm not working with pixels or coding, you'll find me cooking, playing sports like hiking, climbing, or traveling with my pet "Mushhuu" around the world.
+            I have worked on <strong>real-world projects for companies</strong>, collaborating in agile environments (SCRUM) and using Git for version control.
+            My background in <strong>manual testing and API testing</strong> allows me to develop with a strong quality mindset, identifying issues early and improving product reliability.
           </p>
-        </div>
 
-
-      </section>
-
-      <section className='hobbies'>
-        <Gallery />
-      </section>
-
-      <section className='lasts-works'>
-        <div className='container'>
-          <h3 className='subheading' >
-            Welcome to my digital corner!
-          </h3>
-          <p>My trajectory in gastronomy has provided me with unique skills such as creativity, attention to detail, and adaptability, which I now apply in the field of web development.
-            I am committed to continuous learning and constant improvement to stay abreast of the latest technical trends and technologies in this exciting field.
+          <p>
+            I am motivated to build <strong>clean, maintainable, and well-tested</strong> web solutions and to continue growing as a Front-End Developer in collaborative tech teams.
           </p>
-        </div>
 
-        <div className='graf'>
-          <h2 className='subheading'> Soft Skills</h2>
-          <Graf className='Circle' />
         </div>
-
       </section>
 
       <section className='lasts-works'>
         <div className='grafi'>
           <h2 className='subheading'>
-            Technicals Skills
+            Technical Skills
           </h2>
+          <p className='skills-description'>
+            Technologies and tools I use to build scalable, maintainable, and user-focused web applications.
+          </p>
           <Barras className='Barras' />
         </div>
         <div className='container'>
-          <h3 className='subhead '>
-            Coder.</h3>
+          <h3 className='subhead'>Coder.</h3>
           <h2 className='subh'>
-            In front-end development, simplicity breeds elegance with clean code. Less is more when it comes to design and usability.</h2>
+            I believe that clean code and simple design create better user experiences.
+          </h2>
           <p>
-            This space reflects my journey in the world of development, where innovation and aesthetics converge.
+            I focus on writing readable, reusable components and building interfaces that balance aesthetics, performance, and usability.
           </p>
+
         </div>
+      </section>
+
+      <section className='hobbies'>
+        <Gallery />
+      </section>
+      <section className='lasts-works'>
+        <div className='container'>
+          <h3 className='subheading' >
+            Welcome to my digital corner!
+          </h3>
+          <p>
+            My background in gastronomy strengthened skills such as creativity, attention to detail, and adaptability — qualities I now apply to problem-solving and UI development.
+            This experience shapes the way I approach frontend work with discipline and precision.
+          </p>
+
+        </div>
+
+        <div className='graf'>
+          <h2 className='subheading'> Soft Skills</h2>
+          <p className='skills-description'>
+            Skills that define how I collaborate, communicate, and adapt within development teams.
+          </p>
+          <Graf className='Circle' />
+        </div>
+
       </section>
 
       <section className='homes'>
         <div className='containers'>
           <h4 className='subheading'>
-            <Link to="/portfolio">See my featured projects</Link>
+            <Link to="/portfolio">View my featured projects</Link>
+
           </h4>
 
         </div>
