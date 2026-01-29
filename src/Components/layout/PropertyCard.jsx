@@ -1,5 +1,5 @@
 import React from "react";
-import "./PropertyCard.css";
+import "../../styles/PropertyCard.css";
 import { cards } from "../../data/GastronomyBlog";
 
 function PropertyCard() {

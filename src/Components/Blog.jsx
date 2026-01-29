@@ -1,6 +1,7 @@
 import React from "react";
 import { Accordions } from "./layout/Accordions";
 import PropertyCard from "./layout/PropertyCard";
+import "../styles/Blog.css";
 
 export const Blog = () => {
   return (

@@ -24,7 +24,7 @@ export const MiRouter = () => {
           <Route path='/about' element={<Inicio />} />
           <Route path='/portfolio' element={<Portafolio />} />
           <Route path='/curriculum' element={<Curriculum />} />
-          <Route path='/contact' element={<Contacto />} />
+          {/*<Route path='/contact' element={<Contacto />} /> */}
           <Route path='/proyecto/:id' element={<Proyecto />} />
           <Route path='/blog' element={<Blog />} />
 

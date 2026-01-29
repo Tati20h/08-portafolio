@@ -1,6 +1,6 @@
 import React from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import './PageNotFound.css';
+import '../styles/PageNotFound.css';
 
 export const PageNotFound = () => {
   return (

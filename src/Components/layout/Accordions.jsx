@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Accordions.css";
+import "../../styles/Accordions.css";
 import { cards } from "../../data/GastronomyBlog";
 
 export const Accordions = () => {
