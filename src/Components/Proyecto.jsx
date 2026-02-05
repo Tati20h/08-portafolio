@@ -14,7 +14,7 @@ export const Proyecto = () => {
 
     setProyecto(proyecto[0]);
 
-  },[]);
+  },[params.id]);
 
   return (
     <div className='page '>
