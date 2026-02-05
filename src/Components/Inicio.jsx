@@ -4,7 +4,7 @@ import { ContactForm } from "./layout/ContactForm";
 import animation from "../assets/img/men_animation.gif";
 import Graf from "./Mui/Graf";
 import Barras from "./Mui/Barras";
-import { Gallery } from "./layout/Gallery";
+
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import { FiPhoneCall } from "react-icons/fi";
@@ -128,11 +128,12 @@ export const Inicio = () => {
         </div>
       </section>
 
-      {/* HOBBIES */}
+      {/* HOBBIES 
       <section className="hobbies">
         <Gallery />
 
       </section>
+      */}
     </div>
   );
 };

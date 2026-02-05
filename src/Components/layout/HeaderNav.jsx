@@ -23,7 +23,7 @@ export const HeaderNav = () => {
           <li><NavLink to="/portfolio" activeClassName="active" onClick={toggleMenu}>Portfolio</NavLink></li>
 
           <li><NavLink to="/curriculum" activeClassName="active" onClick={toggleMenu}>Curriculum</NavLink></li>
-          <li><NavLink to="/blog" activeClassName="active" onClick={toggleMenu}>Gastro-Blog</NavLink></li>
+          {/*<li><NavLink to="/blog" activeClassName="active" onClick={toggleMenu}>Gastro-Blog</NavLink></li> */}
         </ul>
       </nav>
       <div className={`toggle ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
