@@ -29,8 +29,7 @@ export const Portafolio = () => {
                 <span>{trabajo.categorias}</span>
 
                 <div className="img-box"  >
-                  <img src={trabajo.imagen} alt='img' >
-                  </img>
+                <img src={trabajo.imagen} alt={trabajo.nombre} />
                 </div>
 
                 <div className='content'>

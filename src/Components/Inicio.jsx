@@ -4,7 +4,6 @@ import { ContactForm } from "./layout/ContactForm";
 import animation from "../assets/img/men_animation.gif";
 import Graf from "./Mui/Graf";
 import Barras from "./Mui/Barras";
-
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import { FiPhoneCall } from "react-icons/fi";
